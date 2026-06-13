@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinmicroソリューション｜製造・物流・倉庫向け位置情報DX</title>
+  <meta name="description" content="Pinmicroソリューションは、人・モノ・設備の位置情報を可視化し、探索時間の削減、動線分析、滞在時間分析、業務改善を支援するRTLS／位置情報DXソリューションです。SaaSプラットフォーム「dSense」を中心に、BLE、UWB、スマホ、スマートウォッチ、GPS、カメラを組み合わせ、現場に最適な構成をご提案します。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Pinmicroソリューション｜製造・物流・倉庫向け位置情報DX">
+  <meta property="og:description" content="人・モノ・設備の位置情報を可視化し、業務改善を支援するRTLS／位置情報DXソリューション">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div>
+          <div>Innovature Technologies</div>
+          <div class="nav-logo-sub">Pinmicroソリューション</div>
+        </div>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">ソリューション概要</a></li>
+        <li><a href="#features">できること</a></li>
+        <li><a href="#system">システム構成</a></li>
+        <li><a href="#usecase-manufacturing">ユースケース</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="en.html" class="lang-switch">EN 🇺🇸</a></li>
+        <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="メニュー">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== 1. ファーストビュー (Hero) ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="hero_background.png" alt="位置情報DXイメージ" width="1920" height="1024">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Innovature Technologies｜位置情報DXサービス
+        </div>
+        <h1 class="hero-title">
+          現場の人・モノ・設備の動きを、<br>
+          <span class="hero-title-accent">改善につながるデータへ。</span>
+        </h1>
+        <p class="hero-description">
+          Pinmicroソリューションは、製造現場・物流センター・倉庫など様々な現場における人・モノ・設備の位置情報を可視化し、探索時間の削減、動線改善、滞在時間分析、安全管理を支援するRTLS／位置情報DXソリューションです。
+        </p>
+        <p class="hero-description" style="margin-top: -20px;">
+          SaaSプラットフォーム「dSense」を中心に、BLE、UWB、スマホ、スマートウォッチ、GPS、カメラを組み合わせ、現場環境や目的に応じた最適な位置情報システムを構築します。
+        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0H5m14 0h2M5 21H3m4-7h2m4 0h2m-6-4h2m4 0h2"/></svg>
+            製造・物流・倉庫向け
+          </span>
+          <span class="hero-tag">
+            <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/><path d="M12 2a10 10 0 1 0 10 10"/></svg>
+            BLE／UWB対応
+          </span>
+          <span class="hero-tag">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3zM3 9h18M9 3v18"/></svg>
+            dSenseによる可視化・分析
+          </span>
+          <span class="hero-tag">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+            実証実験から本格導入まで支援
+          </span>
+        </div>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn--primary btn--lg">
+            専用フォームから相談する
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--secondary btn--lg">
+            実証実験について問い合わせる
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-visual-frame">
+          <img src="dashboard_mockup.png" alt="dSenseダッシュボード画面イメージ" width="560" height="560">
+          <div class="hero-visual-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. Pinmicroソリューションとは ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">About</span>
+        <h2 class="section-title">現場の"見えないムダ"を可視化する位置情報DX</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <p>製造・物流・倉庫、施設管理の現場では、人やモノの移動、滞在、所在確認に多くの時間と手間がかかっています。</p>
+          <p>Pinmicroソリューションは、BLEやUWBを活用して現場内の位置情報を取得し、SaaSプラットフォーム「dSense」上でリアルタイムに可視化・分析することで、現場改善に必要なデータ活用を支援します。</p>
+          <p>単なる位置表示にとどまらず、作業動線、滞在時間、探索時間、エリア利用状況などを分析し、業務改善・安全管理・生産性向上につなげます。</p>
+          <div class="about-highlight">
+            <p>Innovature TechnologiesのDX、クラウド、AI、データ分析の知見と組み合わせることで、現場で取得した位置情報を、経営判断に活用できるデータへと発展させます。</p>
+          </div>
+        </div>
+        <div class="about-image fade-in fade-in-delay-2">
+          <img src="dashboard_mockup.png" alt="dSenseプラットフォームによるリアルタイム位置情報の可視化" width="600" height="600">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. 現場課題 ===== -->
+  <section class="section section--alt" id="challenges">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Challenges</span>
+        <h2 class="section-title">製造・物流・倉庫の現場で、<br>こんなお困りごとはありませんか？</h2>
+      </div>
+      <div class="challenge-grid">
+        <!-- Card 1 -->
+        <div class="challenge-card fade-in fade-in-delay-1">
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>モノを探す時間が多い</h3>
+          <p>工具、治具、測定器、金型、台車、カゴ車、通い箱、専用ラックなどの所在確認に時間がかかっている。</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="challenge-card fade-in fade-in-delay-2">
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>人の動きが見えない</h3>
+          <p>作業者、応援者、多能工、保全担当者が、どの工程やエリアにどれだけ滞在しているか把握できない。</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="challenge-card fade-in fade-in-delay-3">
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>物流動線が最適化できない</h3>
+          <p>ピッキング、搬送、入出庫、補充作業の動きが見えず、ムダな移動や待機が発生している。</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="challenge-card fade-in fade-in-delay-1">
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>車両・搬送機器の動きが把握しづらい</h3>
+          <p>フォークリフト、搬送台車、AGV、専用ラックなどの動線や稼働状況を定量的に把握できない。</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="challenge-card fade-in fade-in-delay-2">
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>現場改善の根拠データが不足している</h3>
+          <p>改善活動を行っても、効果を定量的に確認できず、次の施策につなげにくい。</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="challenge-card fade-in fade-in-delay-3">
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>実証実験で止まってしまう</h3>
+          <p>位置情報を取得できても、データ活用の設計が不十分で、本格導入やROI評価につながらない。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. できること ===== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Features</span>
+        <h2 class="section-title">リアルタイム可視化から、<br>動線分析・改善提案まで</h2>
+      </div>
+      <div class="feature-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card fade-in fade-in-delay-1">
+          <span class="feature-number">01</span>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>所在管理</h3>
+          <p>人・モノ・設備の現在地をフロアマップ上に表示します。探す時間を削減し、必要な資産や人員の所在をすばやく確認できます。</p>
+          <p class="feature-note">対象例：工具、治具、測定器、金型、台車、カゴ車、通い箱、専用ラック、作業者、保全担当者など。</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature-card fade-in fade-in-delay-2">
+          <span class="feature-number">02</span>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>動線分析</h3>
+          <p>移動ルートやエリア間の移動履歴を可視化します。ムダな移動、遠回り、作業集中エリア、混雑ポイントを把握できます。</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature-card fade-in fade-in-delay-3">
+          <span class="feature-number">03</span>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>滞在時間分析</h3>
+          <p>工程別、エリア別、作業スポット別に滞在時間を集計します。ボトルネック、待機、作業偏りの発見に役立ちます。</p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="feature-card fade-in fade-in-delay-1">
+          <span class="feature-number">04</span>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>アラート・安全管理</h3>
+          <p>危険エリアへの侵入、長時間滞在、所在不明、接近などを検知し、通知や履歴管理に活用できます。</p>
+        </div>
+        <!-- Feature 5 -->
+        <div class="feature-card fade-in fade-in-delay-2">
+          <span class="feature-number">05</span>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <h3>ダッシュボード・レポート</h3>
+          <p>日次・週次・月次で、現場の動きをダッシュボード化します。改善前後の比較や、ROI評価にも活用できます。</p>
+        </div>
+        <!-- Feature 6 -->
+        <div class="feature-card fade-in fade-in-delay-3">
+          <span class="feature-number">06</span>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+          </div>
+          <h3>ERP・業務システム連携</h3>
+          <p>取得した位置情報をERP、WMS、MES、BIツールなどの業務システムとリアルタイムに連携し、日常業務の中で位置データを活用できます。</p>
+          <p class="feature-note">API、Webhook、MQTT等を通じた外部システム連携に対応。在庫管理、工程管理、作業指示、品質管理など、既存業務フローへの組み込みを支援します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. システム構成 ===== -->
+  <section class="section section--alt" id="system">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">System Architecture</span>
+        <h2 class="section-title">dSenseを中心に、BLE・UWBを<br>組み合わせた柔軟な構成</h2>
+      </div>
+      <p class="system-intro fade-in">Pinmicroソリューションでは、SaaSプラットフォーム「dSense」を中核に、現場の目的・精度・コスト・環境条件に応じて、BLEやUWB等のデバイスを組み合わせます。</p>
+      <div class="system-diagram fade-in">
+        <img src="system_architecture.png" alt="Pinmicroソリューション システム構成図：BLE/UWBデバイス → CloudSense → dSenseクラウド → ダッシュボード" width="700" height="700">
+      </div>
+      <div class="system-components">
+        <div class="system-component fade-in fade-in-delay-1">
+          <div class="system-component-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>dSense</h3>
+          <p>位置情報を可視化・分析するSaaSプラットフォームです。フロアマップ表示、リソース管理、履歴分析、アラート、レポートなどに対応します。</p>
+        </div>
+        <div class="system-component fade-in fade-in-delay-2">
+          <div class="system-component-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3>BLEデバイス</h3>
+          <p>エリア単位の所在管理や、比較的低コストな位置情報取得に適しています。人、備品、台車、通い箱、工具などの管理に活用できます。</p>
+        </div>
+        <div class="system-component fade-in fade-in-delay-3">
+          <div class="system-component-icon">
+            <svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+          </div>
+          <h3>クラウドセンス</h3>
+          <p>BLEデバイスやUWBデバイスから発信される信号を受信し、クラウドへデータを中継するゲートウェイです。</p>
+        </div>
+        <div class="system-component fade-in fade-in-delay-4">
+          <div class="system-component-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>UWBタグ</h3>
+          <p>より高精度な位置測位が必要な用途に適しています。人、車両、重要資産などの位置を、より細かく把握したい場合に活用します。</p>
+        </div>
+        <div class="system-component fade-in fade-in-delay-5">
+          <div class="system-component-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3>UWBアンカー</h3>
+          <p>UWBタグの位置を測位するための固定アンカーです。工場、倉庫、建設現場など、屋内で高精度測位を行う環境に設置します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. BLEとUWBの使い分け ===== -->
+  <section class="section" id="comparison">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Technology Selection</span>
+        <h2 class="section-title">目的・精度・コストに応じて、<br>最適な測位方式を選定</h2>
+      </div>
+      <p class="comparison-intro fade-in">位置情報システムは、測位したい対象や目的によって最適な技術が異なります。Pinmicroソリューションでは、BLEとUWBを使い分け、必要に応じて組み合わせることで、現場に適した構成を設計します。</p>
+      <div class="comparison-table-wrapper fade-in">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>用途</th>
+              <th>推奨技術</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>工具・台車・通い箱の所在管理</td>
+              <td><span class="tech-badge tech-badge--ble">BLE</span></td>
+              <td>コストを抑えてエリア単位で管理</td>
+            </tr>
+            <tr>
+              <td>作業者のエリア滞在分析</td>
+              <td><span class="tech-badge tech-badge--ble">BLE</span></td>
+              <td>工程別・作業エリア別の滞在把握に適する</td>
+            </tr>
+            <tr>
+              <td>重要資産の高精度な位置把握</td>
+              <td><span class="tech-badge tech-badge--uwb">UWB</span></td>
+              <td>より細かな位置精度が必要な用途に適する</td>
+            </tr>
+            <tr>
+              <td>車両・搬送機器の動線分析</td>
+              <td><span class="tech-badge tech-badge--uwb">UWB</span></td>
+              <td>動きの把握やエリア通過分析に適する</td>
+            </tr>
+            <tr>
+              <td>小規模実証実験</td>
+              <td><span class="tech-badge tech-badge--both">BLEまたはUWB</span></td>
+              <td>目的と精度要件に応じて選定</td>
+            </tr>
+            <tr>
+              <td>本格導入・全体最適化</td>
+              <td><span class="tech-badge tech-badge--both">BLE＋UWB併用</span></td>
+              <td>コストと精度のバランスを最適化</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="comparison-note fade-in">※ 測位精度、通信安定性、必要なアンカー数・ゲートウェイ数は、現場環境、設置条件、遮蔽物、金属物、運用方法により異なります。</p>
+    </div>
+  </section>
+
+  <!-- ===== 7. 製造業向けユースケース ===== -->
+  <section class="section section--alt" id="usecase-manufacturing">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Manufacturing Use Cases</span>
+        <h2 class="section-title">製造現場の動きと滞在を可視化し、<br>改善活動を支援</h2>
+      </div>
+      <div class="usecase-grid">
+        <div class="usecase-card fade-in fade-in-delay-1">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>工程・作業スポット別の滞在時間分析</h3>
+            <p>作業者や対象物が、どの工程・作業スポットにどれだけ滞在しているかを可視化します。作業の偏り、待機時間、ボトルネックを把握し、現場改善に活用できます。</p>
+          </div>
+        </div>
+        <div class="usecase-card fade-in fade-in-delay-2">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>工具・治具・測定器・金型の所在管理</h3>
+            <p>必要なモノが見つからない、どこにあるかわからないという探索時間を削減します。共有資産の利用状況や返却漏れの確認にも活用できます。</p>
+          </div>
+        </div>
+        <div class="usecase-card fade-in fade-in-delay-3">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>応援者・多能工・保全担当者の所在把握</h3>
+            <p>トラブル発生時に、近くにいる対応可能な人員をすばやく確認できます。保全対応や応援作業の効率化につながります。</p>
+          </div>
+        </div>
+        <div class="usecase-card fade-in fade-in-delay-4">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>設備周辺の滞留・接近状況の可視化</h3>
+            <p>設備周辺に人やモノが集中していないか、特定エリアで長時間滞在していないかを把握できます。安全管理やレイアウト改善の検討に活用できます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. 物流・倉庫向けユースケース ===== -->
+  <section class="section" id="usecase-logistics">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Logistics Use Cases</span>
+        <h2 class="section-title">物流倉庫の所在・動線・滞留を見える化し、<br>作業効率を高める</h2>
+      </div>
+      <div class="usecase-grid">
+        <div class="usecase-card fade-in fade-in-delay-1">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>台車・カゴ車・通い箱・専用ラックの所在管理</h3>
+            <p>倉庫内を移動する資産の所在を可視化し、探す時間や滞留を削減します。</p>
+          </div>
+        </div>
+        <div class="usecase-card fade-in fade-in-delay-2">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>ピッキング・搬送動線の分析</h3>
+            <p>作業者や搬送機器の移動ルートを分析し、ムダな移動や遠回りを把握します。ピッキングルートやレイアウト改善の検討に活用できます。</p>
+          </div>
+        </div>
+        <div class="usecase-card fade-in fade-in-delay-3">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>エリア別の滞留・混雑分析</h3>
+            <p>入出庫エリア、検品エリア、出荷待機エリアなどの滞留状況を可視化します。人員配置や作業計画の見直しに役立ちます。</p>
+          </div>
+        </div>
+        <div class="usecase-card fade-in fade-in-delay-4">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>フォークリフト・搬送車両の稼働分析</h3>
+            <p>フォークリフトや搬送機器の移動、停止、滞在エリアを分析し、稼働状況や混雑ポイントの把握に活用できます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 9. 導入ステップ ===== -->
+  <section class="section section--alt" id="steps">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Implementation Steps</span>
+        <h2 class="section-title">実証実験から本格導入まで、<br>段階的に支援します</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card fade-in fade-in-delay-1">
+          <div class="step-number">1</div>
+          <h3>課題ヒアリング</h3>
+          <p>対象物、現場レイアウト、測位したい精度、運用目的を確認します。</p>
+        </div>
+        <div class="step-card fade-in fade-in-delay-2">
+          <div class="step-number">2</div>
+          <h3>測位方式の選定</h3>
+          <p>BLE、UWB、またはその他、併用構成を検討します。</p>
+        </div>
+        <div class="step-card fade-in fade-in-delay-3">
+          <div class="step-number">3</div>
+          <h3>実証実験設計</h3>
+          <p>対象エリア、タグ数、アンカー・ゲートウェイ数、評価指標を設計します。</p>
+        </div>
+        <div class="step-card fade-in fade-in-delay-1">
+          <div class="step-number">4</div>
+          <h3>現場検証</h3>
+          <p>実際の現場環境で測位精度、通信状況、運用性を確認します。</p>
+        </div>
+        <div class="step-card fade-in fade-in-delay-2">
+          <div class="step-number">5</div>
+          <h3>ダッシュボード設計</h3>
+          <p>現場管理者や経営層が使いやすい指標に整理し、可視化します。</p>
+        </div>
+        <div class="step-card fade-in fade-in-delay-3">
+          <div class="step-number">6</div>
+          <h3>本格導入・改善運用</h3>
+          <p>対象範囲を拡大し、継続的な改善活動に活用します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 10. Innovatureとの統合メリット ===== -->
+  <section class="section" id="integration">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Integration Benefits</span>
+        <h2 class="section-title">位置情報データを、<br>現場DX・AI活用へ発展させる</h2>
+      </div>
+      <p class="integration-intro fade-in">Pinmicroソリューションは、位置情報の取得だけでなく、Innovature TechnologiesのDX開発、クラウド、AI、データ分析の知見と組み合わせることで、現場データをより価値ある情報へ変換します。</p>
+      <p class="integration-intro fade-in">現場の動きをデータ化し、業務システムやBIダッシュボード、AI分析と連携することで、改善活動の高度化と経営判断の迅速化を支援します。</p>
+      <div class="merit-grid">
+        <div class="merit-card fade-in fade-in-delay-1">
+          <div class="merit-icon">
+            <svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+          </div>
+          <h3>RTLS・IoTデバイスの知見</h3>
+          <p>BLE、UWB、GPS、スマホ、カメラなど、現場環境に応じたデバイス構成を提案します。</p>
+        </div>
+        <div class="merit-card fade-in fade-in-delay-2">
+          <div class="merit-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>SaaSプラットフォーム dSense</h3>
+          <p>位置情報をリアルタイムに可視化し、履歴分析やレポート化まで支援します。</p>
+        </div>
+        <div class="merit-card fade-in fade-in-delay-3">
+          <div class="merit-icon">
+            <svg viewBox="0 0 24 24"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
+          <h3>クラウド・業務システム連携</h3>
+          <p>既存の業務システムやBIツールとの連携を見据えたデータ活用を支援します。</p>
+        </div>
+        <div class="merit-card fade-in fade-in-delay-4">
+          <div class="merit-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg>
+          </div>
+          <h3>AI・データ分析</h3>
+          <p>収集した位置情報をもとに、動線、滞在、混雑、稼働状況などを分析し、改善につながるインサイトを提供します。</p>
+        </div>
+        <div class="merit-card fade-in fade-in-delay-5">
+          <div class="merit-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3>実証実験で終わらせない導入設計</h3>
+          <p>実証実験の段階から、本格導入時の運用、KPI、ROI評価を見据えて設計します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 11. 事例・実績 ===== -->
+  <section class="section section--alt" id="cases">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Case Studies</span>
+        <h2 class="section-title">製造・物流・施設管理など、<br>さまざまな現場で活用を検討いただいています</h2>
+      </div>
+      <p class="cases-intro fade-in">Pinmicroソリューションは、製造現場、物流倉庫、施設管理、イベント会場など、さまざまな現場での人・モノ・設備の可視化に活用されています。</p>
+      <p class="cases-note fade-in">具体的な導入事例については、公開可能な範囲で順次掲載予定です。</p>
+      <div class="cases-tags fade-in">
+        <div class="case-tag">
+          <div class="case-tag-icon">
+            <svg viewBox="0 0 24 24"><path d="M2 20h20"/><path d="M5 20V8h3v12"/><path d="M10 20V4h3v16"/><path d="M15 20v-8h3v8"/></svg>
+          </div>
+          <div>
+            <span class="case-tag-text">製造業</span>
+            <span class="case-tag-sub">工程別滞在時間分析</span>
+          </div>
+        </div>
+        <div class="case-tag">
+          <div class="case-tag-icon">
+            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div>
+            <span class="case-tag-text">物流倉庫</span>
+            <span class="case-tag-sub">台車・通い箱の所在管理</span>
+          </div>
+        </div>
+        <div class="case-tag">
+          <div class="case-tag-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <span class="case-tag-text">倉庫業</span>
+            <span class="case-tag-sub">ピッキング・搬送動線の分析</span>
+          </div>
+        </div>
+        <div class="case-tag">
+          <div class="case-tag-icon">
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+          </div>
+          <div>
+            <span class="case-tag-text">施設管理</span>
+            <span class="case-tag-sub">人・設備・備品の所在管理</span>
+          </div>
+        </div>
+        <div class="case-tag">
+          <div class="case-tag-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <span class="case-tag-text">イベント</span>
+            <span class="case-tag-sub">来場者動線・滞在分析</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 12. よくある質問 ===== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">よくある質問</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">
+              <span class="faq-q-badge">Q</span>
+              BLEとUWBの違いは何ですか？
+            </span>
+            <span class="faq-toggle">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              BLEは比較的低コストでエリア単位の所在管理や滞在分析に適しています。UWBはより高精度な位置測位が必要な用途に適しています。現場の目的、必要精度、対象物、予算に応じて最適な方式を選定します。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">
+              <span class="faq-q-badge">Q</span>
+              まずは小規模に試すことはできますか？
+            </span>
+            <span class="faq-toggle">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              はい。対象エリアや対象物を限定した小規模構成から開始できます。実証実験では測位精度、通信状況、運用性、取得データの活用可能性を確認します。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">
+              <span class="faq-q-badge">Q</span>
+              既存の倉庫管理システムや業務システムと連携できますか？
+            </span>
+            <span class="faq-toggle">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              連携可否や方式はシステム構成によります。必要に応じて、API、MQTT等の外部システム連携やBIツールとの連携を見据えた構成をご提案します。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">
+              <span class="faq-q-badge">Q</span>
+              工場や倉庫のように金属物が多い環境でも使えますか？
+            </span>
+            <span class="faq-toggle">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              現場環境によって測位精度や通信状況は変わります。金属物、遮蔽物、天井高、レイアウト、設置位置などを確認したうえで、適切な測位方式と設置構成を検討します。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">
+              <span class="faq-q-badge">Q</span>
+              導入までの期間はどのくらいですか？
+            </span>
+            <span class="faq-toggle">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              対象エリア、タグ数、設置条件、システム連携の有無により異なります。まずはヒアリングと現場確認を行い、実証実験、または本格導入のスケジュールをご提案します。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 13. 専用問い合わせフォーム ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper fade-in">
+        <div class="contact-header">
+          <h2>Pinmicroソリューション専用お問い合わせ</h2>
+          <p>製造・物流・倉庫、施設管理における位置情報の活用、実証実験、本格導入についてお気軽にご相談ください。<br>現場課題に応じて、BLE・UWB・その他デバイスを組み合わせた最適な構成をご提案します。</p>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <!-- 必須項目 -->
+          <div class="form-group-title">
+            <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            基本情報（必須）
+          </div>
+          <div class="form-grid">
+            <div class="form-field">
+              <label class="form-label" for="company">
+                会社名 <span class="form-required">必須</span>
+              </label>
+              <input type="text" class="form-input" id="company" name="company" placeholder="例：Innovature Technologies株式会社" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="department">
+                部署名 <span class="form-required">必須</span>
+              </label>
+              <input type="text" class="form-input" id="department" name="department" placeholder="例：DX推進部" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="name">
+                氏名 <span class="form-required">必須</span>
+              </label>
+              <input type="text" class="form-input" id="name" name="name" placeholder="例：山田 太郎" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="email">
+                メールアドレス <span class="form-required">必須</span>
+              </label>
+              <input type="email" class="form-input" id="email" name="email" placeholder="例：example@company.co.jp" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="phone">
+                電話番号 <span class="form-required">必須</span>
+              </label>
+              <input type="tel" class="form-input" id="phone" name="phone" placeholder="例：03-1234-5678" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="industry">
+                業種 <span class="form-required">必須</span>
+              </label>
+              <select class="form-select" id="industry" name="industry" required>
+                <option value="">選択してください</option>
+                <option value="manufacturing">製造業</option>
+                <option value="logistics">物流業</option>
+                <option value="warehouse">倉庫業</option>
+                <option value="construction">建設・インフラ</option>
+                <option value="facility">施設管理</option>
+                <option value="retail">小売・流通</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+            <div class="form-field form-field--full">
+              <label class="form-label" for="inquiry">
+                お問い合わせ内容 <span class="form-required">必須</span>
+              </label>
+              <textarea class="form-textarea" id="inquiry" name="inquiry" placeholder="ご相談内容、現場の課題、検討状況などをご記入ください。" required></textarea>
+            </div>
+          </div>
+
+          <!-- 任意項目 -->
+          <div class="form-group-title">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            詳細情報（任意）
+          </div>
+          <div class="form-grid">
+            <div class="form-field">
+              <label class="form-label" for="target_site">
+                対象現場 <span class="form-optional">任意</span>
+              </label>
+              <select class="form-select" id="target_site" name="target_site">
+                <option value="">選択してください</option>
+                <option value="factory">製造工場</option>
+                <option value="logistics_warehouse">物流倉庫</option>
+                <option value="warehouse">倉庫</option>
+                <option value="construction">建設・インフラ</option>
+                <option value="office_facility">オフィス・施設</option>
+                <option value="event">イベント会場</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="target_object">
+                可視化したい対象 <span class="form-optional">任意</span>
+              </label>
+              <select class="form-select" id="target_object" name="target_object">
+                <option value="">選択してください</option>
+                <option value="people">人</option>
+                <option value="tools">工具・治具・測定器</option>
+                <option value="carts">台車・カゴ車・通い箱</option>
+                <option value="vehicles">車両・搬送機器</option>
+                <option value="equipment">設備</option>
+                <option value="materials">資材・部品</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="stage">
+                検討段階 <span class="form-optional">任意</span>
+              </label>
+              <select class="form-select" id="stage" name="stage">
+                <option value="">選択してください</option>
+                <option value="research">情報収集中</option>
+                <option value="poc">実証実験を検討中</option>
+                <option value="budget">予算化を検討中</option>
+                <option value="deployment">本格導入を検討中</option>
+                <option value="switch">既存システムからの切り替えを検討中</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="positioning_method">
+                希望する測位方式 <span class="form-optional">任意</span>
+              </label>
+              <select class="form-select" id="positioning_method" name="positioning_method">
+                <option value="">選択してください</option>
+                <option value="ble">BLE</option>
+                <option value="uwb">UWB</option>
+                <option value="ble_uwb">BLEとUWBの併用</option>
+                <option value="undecided">未定</option>
+                <option value="consult">相談したい</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="area_size">
+                現場面積 <span class="form-optional">任意</span>
+              </label>
+              <input type="text" class="form-input" id="area_size" name="area_size" placeholder="例：約3,000㎡">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="tag_count">
+                タグ想定数 <span class="form-optional">任意</span>
+              </label>
+              <input type="text" class="form-input" id="tag_count" name="tag_count" placeholder="例：約100個">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="timeline">
+                希望時期 <span class="form-optional">任意</span>
+              </label>
+              <input type="text" class="form-input" id="timeline" name="timeline" placeholder="例：2026年10月頃">
+            </div>
+          </div>
+
+          <!-- 同意 -->
+          <div class="form-consent">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">
+              <a href="https://pinmicro.jp/%e5%80%8b%e4%ba%ba%e6%83%85%e5%a0%b1%e5%8f%96%e6%89%b1%e3%81%84%e5%90%8c%e6%84%8f%e6%9b%b8" target="_blank" rel="noopener noreferrer">個人情報取扱い同意書</a>の内容に同意する。
+            </label>
+          </div>
+
+          <!-- 送信 -->
+          <div class="form-submit-area">
+            <button type="submit" class="form-submit-btn">
+              <svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              相談内容を送信する
+            </button>
+          </div>
+
+          <p class="form-note">
+            送信いただいた内容を確認のうえ、担当者よりご連絡いたします。<br>
+            測位方式、構成、費用、導入スケジュールは、現場環境やご要件を確認したうえで個別にご提案します。
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 14. 最終CTA ===== -->
+  <section class="final-cta" id="final-cta">
+    <div class="final-cta-particles"></div>
+    <div class="container">
+      <div class="final-cta-content fade-in">
+        <h2>まずは、現場の"見える化したい対象"を<br>お聞かせください。</h2>
+        <p>人の動き、モノの所在、車両の稼働、工程別の滞在時間など、現場によって可視化すべき対象は異なります。<br><br>Pinmicroソリューションは、現場課題の整理から測位方式の選定、実証実験設計、ダッシュボード化、AI分析まで一貫して支援します。</p>
+        <div class="final-cta-actions">
+          <a href="#contact" class="btn btn--white btn--lg">
+            専用フォームから相談する
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--secondary btn--lg">
+            実証実験について問い合わせる
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">Innovature Technologies</div>
+      <p class="footer-sub">Pinmicro株式会社が展開してきたRTLS／位置情報事業を、Innovature Technologiesのサービスとして提供しています。</p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">&copy; 2026 Innovature Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

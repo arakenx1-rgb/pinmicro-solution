@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinmicro Solution | Location Intelligence DX for Manufacturing, Logistics & Warehousing</title>
+  <meta name="description" content="Pinmicro Solution visualizes the location of people, assets, and equipment to reduce search time, analyze movement flows, dwell time, and drive operational improvement. Built around the dSense SaaS platform, combining BLE, UWB, smartphones, smartwatches, GPS, and cameras to deliver the optimal configuration for your facility.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Pinmicro Solution | Location Intelligence DX for Manufacturing, Logistics & Warehousing">
+  <meta property="og:description" content="Visualize the location of people, assets, and equipment to drive operational improvement with RTLS / Location Intelligence DX.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div>
+          <div>Innovature Technologies</div>
+          <div class="nav-logo-sub">Pinmicro Solution</div>
+        </div>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">Overview</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#system">Architecture</a></li>
+        <li><a href="#usecase-manufacturing">Use Cases</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="index.html" class="lang-switch">JP 🇯🇵</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== 1. Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="hero_background.png" alt="Location Intelligence DX" width="1920" height="1024">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Innovature Technologies | Location Intelligence DX
+        </div>
+        <h1 class="hero-title">
+          Transform the movement of people, assets &amp; equipment into
+          <span class="hero-title-accent">actionable data.</span>
+        </h1>
+        <p class="hero-description">
+          Pinmicro Solution is an RTLS / Location Intelligence DX platform that visualizes the real-time location of people, assets, and equipment across manufacturing floors, distribution centers, and warehouses — enabling reduced search time, flow optimization, dwell-time analysis, and safety management.
+        </p>
+        <p class="hero-description" style="margin-top: -20px;">
+          Built around the dSense SaaS platform, it combines BLE, UWB, smartphones, smartwatches, GPS, and cameras to deliver the optimal location system for your facility and objectives.
+        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0H5m14 0h2M5 21H3m4-7h2m4 0h2m-6-4h2m4 0h2"/></svg>
+            Manufacturing, Logistics &amp; Warehousing
+          </span>
+          <span class="hero-tag">
+            <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/><path d="M12 2a10 10 0 1 0 10 10"/></svg>
+            BLE / UWB Supported
+          </span>
+          <span class="hero-tag">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3zM3 9h18M9 3v18"/></svg>
+            Visualization &amp; Analytics via dSense
+          </span>
+          <span class="hero-tag">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+            From PoC to Full Deployment
+          </span>
+        </div>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn--primary btn--lg">
+            Contact Us
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--secondary btn--lg">
+            Inquire About a Pilot Project
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-visual-frame">
+          <img src="dashboard_mockup.png" alt="dSense dashboard interface" width="560" height="560">
+          <div class="hero-visual-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. About ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">About</span>
+        <h2 class="section-title">Make the Invisible Waste Visible with Location Intelligence DX</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <p>Across manufacturing, logistics, warehousing, and facility management, significant time and effort are spent tracking the movement, dwell, and whereabouts of people and assets.</p>
+          <p>Pinmicro Solution captures in-facility location data using BLE and UWB, then visualizes and analyzes it in real time on the dSense SaaS platform — empowering the data-driven improvements your operations need.</p>
+          <p>Going beyond simple location display, it analyzes work-flow paths, dwell times, search times, and area utilization to drive operational improvement, safety management, and productivity gains.</p>
+          <div class="about-highlight">
+            <p>Combined with Innovature Technologies' expertise in DX, cloud, AI, and data analytics, the location data captured on the floor is transformed into information that supports executive decision-making.</p>
+          </div>
+        </div>
+        <div class="about-image fade-in fade-in-delay-2">
+          <img src="dashboard_mockup.png" alt="Real-time location visualization with the dSense platform" width="600" height="600">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. Challenges ===== -->
+  <section class="section section--alt" id="challenges">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Challenges</span>
+        <h2 class="section-title">Do Any of These Challenges Sound Familiar?</h2>
+      </div>
+      <div class="challenge-grid">
+        <div class="challenge-card fade-in fade-in-delay-1">
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>Too Much Time Spent Searching for Assets</h3>
+          <p>Tools, jigs, gauges, dies, carts, cage trolleys, returnable containers, and specialized racks — locating them takes too long.</p>
+        </div>
+        <div class="challenge-card fade-in fade-in-delay-2">
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>No Visibility into Worker Movement</h3>
+          <p>Unable to determine how long operators, support staff, multi-skilled workers, or maintenance personnel spend in each process or area.</p>
+        </div>
+        <div class="challenge-card fade-in fade-in-delay-3">
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Logistics Flows Cannot Be Optimized</h3>
+          <p>Movement during picking, transport, receiving/shipping, and replenishment is invisible — resulting in wasted travel and idle time.</p>
+        </div>
+        <div class="challenge-card fade-in fade-in-delay-1">
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Vehicle &amp; Transport Equipment Tracking Is Difficult</h3>
+          <p>Forklifts, transport carts, AGVs, and specialized racks — their routes and utilization cannot be quantitatively measured.</p>
+        </div>
+        <div class="challenge-card fade-in fade-in-delay-2">
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Lack of Evidence-Based Improvement Data</h3>
+          <p>Even after improvement initiatives, there is no quantitative way to verify outcomes or plan the next steps.</p>
+        </div>
+        <div class="challenge-card fade-in fade-in-delay-3">
+          <div class="challenge-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>Pilot Projects Stall Without Scaling</h3>
+          <p>Location data is captured, but insufficient data-utilization design prevents progression to full deployment or ROI evaluation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. Features ===== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Features</span>
+        <h2 class="section-title">From Real-Time Visualization to Flow Analysis &amp; Improvement</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card fade-in fade-in-delay-1">
+          <span class="feature-number">01</span>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Location Management</h3>
+          <p>Display the current location of people, assets, and equipment on a floor map. Quickly locate the resources you need and reduce search time.</p>
+          <p class="feature-note">Examples: tools, jigs, gauges, dies, carts, cage trolleys, returnable containers, specialized racks, operators, maintenance staff, etc.</p>
+        </div>
+        <div class="feature-card fade-in fade-in-delay-2">
+          <span class="feature-number">02</span>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Flow Analysis</h3>
+          <p>Visualize movement routes and inter-area travel history. Identify unnecessary travel, detours, work-concentration areas, and congestion points.</p>
+        </div>
+        <div class="feature-card fade-in fade-in-delay-3">
+          <span class="feature-number">03</span>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Dwell Time Analysis</h3>
+          <p>Aggregate dwell time by process, area, and work spot. Useful for identifying bottlenecks, idle time, and workload imbalances.</p>
+        </div>
+        <div class="feature-card fade-in fade-in-delay-1">
+          <span class="feature-number">04</span>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Alerts &amp; Safety Management</h3>
+          <p>Detect entry into hazardous areas, prolonged dwell, missing assets, and proximity events — then generate notifications and maintain audit logs.</p>
+        </div>
+        <div class="feature-card fade-in fade-in-delay-2">
+          <span class="feature-number">05</span>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <h3>Dashboards &amp; Reports</h3>
+          <p>Turn operational movement into daily, weekly, and monthly dashboards. Compare before-and-after results and support ROI evaluation.</p>
+        </div>
+        <!-- Feature 6 -->
+        <div class="feature-card fade-in fade-in-delay-3">
+          <span class="feature-number">06</span>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+          </div>
+          <h3>ERP &amp; Business System Integration</h3>
+          <p>Integrate real-time location data with your ERP, WMS, MES, and BI tools — so location intelligence becomes part of your daily operations, not a separate silo.</p>
+          <p class="feature-note">Supports external system integration via API, Webhook, and MQTT. Embed location data into existing workflows such as inventory management, process control, work orders, and quality assurance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. System Architecture ===== -->
+  <section class="section section--alt" id="system">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">System Architecture</span>
+        <h2 class="section-title">Flexible Configuration Centered on dSense with BLE &amp; UWB</h2>
+      </div>
+      <p class="system-intro fade-in">Pinmicro Solution uses the dSense SaaS platform as its core, combining BLE and UWB devices to match the objectives, accuracy requirements, cost, and environmental conditions of each facility.</p>
+      <div class="system-diagram fade-in">
+        <img src="system_architecture.png" alt="System architecture: BLE/UWB devices → CloudSense gateways → dSense cloud → Dashboards" width="700" height="700">
+      </div>
+      <div class="system-components">
+        <div class="system-component fade-in fade-in-delay-1">
+          <div class="system-component-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>dSense</h3>
+          <p>SaaS platform for visualizing and analyzing location data. Supports floor map display, resource management, history analytics, alerts, and reports.</p>
+        </div>
+        <div class="system-component fade-in fade-in-delay-2">
+          <div class="system-component-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3>BLE Devices</h3>
+          <p>Ideal for area-level location management and cost-effective positioning. Used for people, tools, carts, returnable containers, and more.</p>
+        </div>
+        <div class="system-component fade-in fade-in-delay-3">
+          <div class="system-component-icon">
+            <svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+          </div>
+          <h3>CloudSense</h3>
+          <p>Gateway that receives signals from BLE and UWB devices and relays data to the cloud.</p>
+        </div>
+        <div class="system-component fade-in fade-in-delay-4">
+          <div class="system-component-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>UWB Tags</h3>
+          <p>Suited for applications requiring higher-precision positioning. Used when more granular tracking of people, vehicles, or critical assets is needed.</p>
+        </div>
+        <div class="system-component fade-in fade-in-delay-5">
+          <div class="system-component-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3>UWB Anchors</h3>
+          <p>Fixed anchors for positioning UWB tags. Installed in factories, warehouses, and construction sites for high-precision indoor positioning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. BLE vs UWB ===== -->
+  <section class="section" id="comparison">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Technology Selection</span>
+        <h2 class="section-title">Selecting the Optimal Positioning Technology for Your Needs</h2>
+      </div>
+      <p class="comparison-intro fade-in">The best positioning technology depends on what you need to track and why. Pinmicro Solution selects and combines BLE and UWB to design the right configuration for your facility.</p>
+      <div class="comparison-table-wrapper fade-in">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Use Case</th>
+              <th>Recommended</th>
+              <th>Characteristics</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tool, cart &amp; container tracking</td>
+              <td><span class="tech-badge tech-badge--ble">BLE</span></td>
+              <td>Cost-effective area-level management</td>
+            </tr>
+            <tr>
+              <td>Worker area dwell analysis</td>
+              <td><span class="tech-badge tech-badge--ble">BLE</span></td>
+              <td>Suited for process-level and area-level dwell tracking</td>
+            </tr>
+            <tr>
+              <td>High-precision critical asset tracking</td>
+              <td><span class="tech-badge tech-badge--uwb">UWB</span></td>
+              <td>Suited for applications requiring finer position accuracy</td>
+            </tr>
+            <tr>
+              <td>Vehicle &amp; transport flow analysis</td>
+              <td><span class="tech-badge tech-badge--uwb">UWB</span></td>
+              <td>Suited for movement tracking and zone-transit analysis</td>
+            </tr>
+            <tr>
+              <td>Small-scale pilot project</td>
+              <td><span class="tech-badge tech-badge--both">BLE or UWB</span></td>
+              <td>Selected based on objectives and accuracy requirements</td>
+            </tr>
+            <tr>
+              <td>Full deployment &amp; optimization</td>
+              <td><span class="tech-badge tech-badge--both">BLE + UWB</span></td>
+              <td>Optimizing the balance between cost and precision</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="comparison-note fade-in">* Positioning accuracy, communication stability, and the required number of anchors/gateways vary depending on the facility environment, installation conditions, obstructions, metallic objects, and operational methods.</p>
+    </div>
+  </section>
+
+  <!-- ===== 7. Manufacturing Use Cases ===== -->
+  <section class="section section--alt" id="usecase-manufacturing">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Manufacturing Use Cases</span>
+        <h2 class="section-title">Visualize Movement &amp; Dwell on the Factory Floor to Drive Improvement</h2>
+      </div>
+      <div class="usecase-grid">
+        <div class="usecase-card fade-in fade-in-delay-1">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>Process &amp; Work-Spot Dwell Time Analysis</h3>
+            <p>Visualize how long workers and assets dwell at each process or work spot. Identify workload imbalances, idle time, and bottlenecks to support improvement activities.</p>
+          </div>
+        </div>
+        <div class="usecase-card fade-in fade-in-delay-2">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>Tool, Jig, Gauge &amp; Die Location Management</h3>
+            <p>Reduce time spent searching for items that cannot be found. Also useful for monitoring shared-asset usage and verifying returns.</p>
+          </div>
+        </div>
+        <div class="usecase-card fade-in fade-in-delay-3">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>Support Staff &amp; Maintenance Personnel Tracking</h3>
+            <p>Quickly locate available personnel nearby when incidents occur. Streamline maintenance response and support operations.</p>
+          </div>
+        </div>
+        <div class="usecase-card fade-in fade-in-delay-4">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>Equipment Proximity &amp; Congestion Monitoring</h3>
+            <p>Detect whether people or assets are congregating around equipment, or whether prolonged dwell is occurring in specific areas. Supports safety management and layout improvement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. Logistics Use Cases ===== -->
+  <section class="section" id="usecase-logistics">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Logistics Use Cases</span>
+        <h2 class="section-title">Visualize Location, Flow &amp; Congestion in Warehouses to Boost Efficiency</h2>
+      </div>
+      <div class="usecase-grid">
+        <div class="usecase-card fade-in fade-in-delay-1">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>Cart, Cage Trolley &amp; Returnable Container Tracking</h3>
+            <p>Visualize the whereabouts of in-warehouse mobile assets to reduce search time and minimize stagnation.</p>
+          </div>
+        </div>
+        <div class="usecase-card fade-in fade-in-delay-2">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>Picking &amp; Transport Flow Analysis</h3>
+            <p>Analyze worker and transport-equipment movement routes. Identify unnecessary travel and detours to improve picking routes and warehouse layout.</p>
+          </div>
+        </div>
+        <div class="usecase-card fade-in fade-in-delay-3">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>Area-Level Congestion &amp; Dwell Analysis</h3>
+            <p>Visualize congestion in receiving/shipping, inspection, and staging areas. Useful for adjusting staffing and revising work plans.</p>
+          </div>
+        </div>
+        <div class="usecase-card fade-in fade-in-delay-4">
+          <div class="usecase-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49"/></svg>
+          </div>
+          <div class="usecase-content">
+            <h3>Forklift &amp; Transport Vehicle Utilization Analysis</h3>
+            <p>Analyze forklift and transport-equipment movement, stops, and dwell areas to understand utilization and identify congestion hotspots.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 9. Implementation Steps ===== -->
+  <section class="section section--alt" id="steps">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Implementation Steps</span>
+        <h2 class="section-title">Phased Support from Pilot to Full Deployment</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card fade-in fade-in-delay-1">
+          <div class="step-number">1</div>
+          <h3>Challenge Discovery</h3>
+          <p>Understand the target assets, facility layout, required accuracy, and operational objectives.</p>
+        </div>
+        <div class="step-card fade-in fade-in-delay-2">
+          <div class="step-number">2</div>
+          <h3>Technology Selection</h3>
+          <p>Evaluate BLE, UWB, or hybrid configurations based on your requirements.</p>
+        </div>
+        <div class="step-card fade-in fade-in-delay-3">
+          <div class="step-number">3</div>
+          <h3>Pilot Design</h3>
+          <p>Define target areas, tag counts, anchor/gateway placement, and evaluation criteria.</p>
+        </div>
+        <div class="step-card fade-in fade-in-delay-1">
+          <div class="step-number">4</div>
+          <h3>On-Site Validation</h3>
+          <p>Verify positioning accuracy, communication stability, and operational viability in the actual environment.</p>
+        </div>
+        <div class="step-card fade-in fade-in-delay-2">
+          <div class="step-number">5</div>
+          <h3>Dashboard Design</h3>
+          <p>Organize metrics into dashboards that facility managers and executives can use effectively.</p>
+        </div>
+        <div class="step-card fade-in fade-in-delay-3">
+          <div class="step-number">6</div>
+          <h3>Full Deployment &amp; Continuous Improvement</h3>
+          <p>Scale the coverage area and leverage data for ongoing operational improvement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 10. Integration Benefits ===== -->
+  <section class="section" id="integration">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Integration Benefits</span>
+        <h2 class="section-title">Elevate Location Data into Facility DX &amp; AI-Driven Insights</h2>
+      </div>
+      <p class="integration-intro fade-in">Pinmicro Solution goes beyond location capture. Combined with Innovature Technologies' DX development, cloud, AI, and data analytics expertise, it transforms on-floor data into higher-value intelligence.</p>
+      <p class="integration-intro fade-in">By digitizing facility movement and integrating with business systems, BI dashboards, and AI analytics, it accelerates improvement initiatives and executive decision-making.</p>
+      <div class="merit-grid">
+        <div class="merit-card fade-in fade-in-delay-1">
+          <div class="merit-icon">
+            <svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+          </div>
+          <h3>RTLS &amp; IoT Device Expertise</h3>
+          <p>We recommend device configurations — BLE, UWB, GPS, smartphones, cameras — tailored to your facility environment.</p>
+        </div>
+        <div class="merit-card fade-in fade-in-delay-2">
+          <div class="merit-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>dSense SaaS Platform</h3>
+          <p>Real-time location visualization with history analytics and reporting capabilities.</p>
+        </div>
+        <div class="merit-card fade-in fade-in-delay-3">
+          <div class="merit-icon">
+            <svg viewBox="0 0 24 24"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
+          <h3>Cloud &amp; Business System Integration</h3>
+          <p>Data utilization designed with existing business systems and BI tool integration in mind.</p>
+        </div>
+        <div class="merit-card fade-in fade-in-delay-4">
+          <div class="merit-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg>
+          </div>
+          <h3>AI &amp; Data Analytics</h3>
+          <p>Analyze collected location data — flow, dwell, congestion, utilization — and deliver actionable improvement insights.</p>
+        </div>
+        <div class="merit-card fade-in fade-in-delay-5">
+          <div class="merit-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3>Deployment Design That Goes Beyond the Pilot</h3>
+          <p>From the pilot stage, we design with full-deployment operations, KPIs, and ROI evaluation in mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 11. Case Studies ===== -->
+  <section class="section section--alt" id="cases">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Case Studies</span>
+        <h2 class="section-title">Adopted Across Manufacturing, Logistics, Facility Management &amp; More</h2>
+      </div>
+      <p class="cases-intro fade-in">Pinmicro Solution is used to visualize people, assets, and equipment across manufacturing floors, distribution warehouses, facility management, event venues, and more.</p>
+      <p class="cases-note fade-in">Specific case studies will be published progressively as permissions are obtained.</p>
+      <div class="cases-tags fade-in">
+        <div class="case-tag">
+          <div class="case-tag-icon">
+            <svg viewBox="0 0 24 24"><path d="M2 20h20"/><path d="M5 20V8h3v12"/><path d="M10 20V4h3v16"/><path d="M15 20v-8h3v8"/></svg>
+          </div>
+          <div>
+            <span class="case-tag-text">Manufacturing</span>
+            <span class="case-tag-sub">Process-level dwell time analysis</span>
+          </div>
+        </div>
+        <div class="case-tag">
+          <div class="case-tag-icon">
+            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div>
+            <span class="case-tag-text">Distribution Warehouse</span>
+            <span class="case-tag-sub">Cart &amp; container tracking</span>
+          </div>
+        </div>
+        <div class="case-tag">
+          <div class="case-tag-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <span class="case-tag-text">Warehousing</span>
+            <span class="case-tag-sub">Picking &amp; transport flow analysis</span>
+          </div>
+        </div>
+        <div class="case-tag">
+          <div class="case-tag-icon">
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+          </div>
+          <div>
+            <span class="case-tag-text">Facility Management</span>
+            <span class="case-tag-sub">People, equipment &amp; asset tracking</span>
+          </div>
+        </div>
+        <div class="case-tag">
+          <div class="case-tag-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <span class="case-tag-text">Events</span>
+            <span class="case-tag-sub">Visitor flow &amp; dwell analysis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 12. FAQ ===== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">
+              <span class="faq-q-badge">Q</span>
+              What is the difference between BLE and UWB?
+            </span>
+            <span class="faq-toggle">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              BLE is relatively low-cost and suited for area-level location management and dwell analysis. UWB is suited for applications requiring higher-precision positioning. We select the optimal technology based on facility objectives, required accuracy, target assets, and budget.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">
+              <span class="faq-q-badge">Q</span>
+              Can we start with a small-scale pilot?
+            </span>
+            <span class="faq-toggle">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Yes. You can start with a small-scale configuration targeting specific areas or assets. During the pilot, we verify positioning accuracy, communication stability, operational viability, and the potential for data utilization.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">
+              <span class="faq-q-badge">Q</span>
+              Can it integrate with existing WMS or business systems?
+            </span>
+            <span class="faq-toggle">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Integration feasibility and approach depend on the system architecture. We can propose configurations designed with API, MQTT, and BI tool integration in mind as needed.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">
+              <span class="faq-q-badge">Q</span>
+              Does it work in metal-heavy environments like factories and warehouses?
+            </span>
+            <span class="faq-toggle">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Positioning accuracy and communication stability vary depending on the facility environment. We assess metallic objects, obstructions, ceiling height, layout, and installation locations before recommending the appropriate positioning technology and configuration.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-question-text">
+              <span class="faq-q-badge">Q</span>
+              How long does deployment take?
+            </span>
+            <span class="faq-toggle">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              This varies depending on the target area, number of tags, installation conditions, and system integration requirements. We start with a discovery session and on-site assessment, then propose a timeline for a pilot or full deployment.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 13. Contact Form ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper fade-in">
+        <div class="contact-header">
+          <h2>Pinmicro Solution — Contact Us</h2>
+          <p>Whether you're exploring location intelligence for manufacturing, logistics, warehousing, or facility management — whether you need a pilot or a full deployment — we're here to help.<br>We'll recommend the optimal BLE, UWB, or hybrid configuration based on your facility challenges.</p>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <!-- Required Fields -->
+          <div class="form-group-title">
+            <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            Contact Information (Required)
+          </div>
+          <div class="form-grid">
+            <div class="form-field">
+              <label class="form-label" for="company">
+                Company Name <span class="form-required">Required</span>
+              </label>
+              <input type="text" class="form-input" id="company" name="company" placeholder="e.g. Innovature Technologies Inc." required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="department">
+                Department <span class="form-required">Required</span>
+              </label>
+              <input type="text" class="form-input" id="department" name="department" placeholder="e.g. DX Strategy Division" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="name">
+                Full Name <span class="form-required">Required</span>
+              </label>
+              <input type="text" class="form-input" id="name" name="name" placeholder="e.g. Taro Yamada" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="email">
+                Email Address <span class="form-required">Required</span>
+              </label>
+              <input type="email" class="form-input" id="email" name="email" placeholder="e.g. example@company.com" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="phone">
+                Phone Number <span class="form-required">Required</span>
+              </label>
+              <input type="tel" class="form-input" id="phone" name="phone" placeholder="e.g. +81-3-1234-5678" required>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="industry">
+                Industry <span class="form-required">Required</span>
+              </label>
+              <select class="form-select" id="industry" name="industry" required>
+                <option value="">Please select</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="logistics">Logistics</option>
+                <option value="warehouse">Warehousing</option>
+                <option value="construction">Construction / Infrastructure</option>
+                <option value="facility">Facility Management</option>
+                <option value="retail">Retail / Distribution</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-field form-field--full">
+              <label class="form-label" for="inquiry">
+                Inquiry Details <span class="form-required">Required</span>
+              </label>
+              <textarea class="form-textarea" id="inquiry" name="inquiry" placeholder="Please describe your challenges, current situation, or what you'd like to discuss." required></textarea>
+            </div>
+          </div>
+
+          <!-- Optional Fields -->
+          <div class="form-group-title">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            Additional Details (Optional)
+          </div>
+          <div class="form-grid">
+            <div class="form-field">
+              <label class="form-label" for="target_site">
+                Target Facility <span class="form-optional">Optional</span>
+              </label>
+              <select class="form-select" id="target_site" name="target_site">
+                <option value="">Please select</option>
+                <option value="factory">Manufacturing Plant</option>
+                <option value="logistics_warehouse">Distribution Warehouse</option>
+                <option value="warehouse">Warehouse</option>
+                <option value="construction">Construction / Infrastructure</option>
+                <option value="office_facility">Office / Facility</option>
+                <option value="event">Event Venue</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="target_object">
+                What to Visualize <span class="form-optional">Optional</span>
+              </label>
+              <select class="form-select" id="target_object" name="target_object">
+                <option value="">Please select</option>
+                <option value="people">People</option>
+                <option value="tools">Tools / Jigs / Gauges</option>
+                <option value="carts">Carts / Cage Trolleys / Containers</option>
+                <option value="vehicles">Vehicles / Transport Equipment</option>
+                <option value="equipment">Equipment / Machinery</option>
+                <option value="materials">Materials / Parts</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="stage">
+                Current Stage <span class="form-optional">Optional</span>
+              </label>
+              <select class="form-select" id="stage" name="stage">
+                <option value="">Please select</option>
+                <option value="research">Gathering Information</option>
+                <option value="poc">Considering a Pilot Project</option>
+                <option value="budget">Budgeting Phase</option>
+                <option value="deployment">Considering Full Deployment</option>
+                <option value="switch">Considering Switching from Existing System</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="positioning_method">
+                Preferred Positioning Technology <span class="form-optional">Optional</span>
+              </label>
+              <select class="form-select" id="positioning_method" name="positioning_method">
+                <option value="">Please select</option>
+                <option value="ble">BLE</option>
+                <option value="uwb">UWB</option>
+                <option value="ble_uwb">BLE + UWB Combined</option>
+                <option value="undecided">Undecided</option>
+                <option value="consult">Would Like to Consult</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="area_size">
+                Facility Area <span class="form-optional">Optional</span>
+              </label>
+              <input type="text" class="form-input" id="area_size" name="area_size" placeholder="e.g. Approx. 3,000 m²">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="tag_count">
+                Estimated Tag Count <span class="form-optional">Optional</span>
+              </label>
+              <input type="text" class="form-input" id="tag_count" name="tag_count" placeholder="e.g. Approx. 100 tags">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="timeline">
+                Desired Timeline <span class="form-optional">Optional</span>
+              </label>
+              <input type="text" class="form-input" id="timeline" name="timeline" placeholder="e.g. Around October 2026">
+            </div>
+          </div>
+
+          <!-- Consent -->
+          <div class="form-consent">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">
+              I agree to the terms of the <a href="https://pinmicro.jp/%e5%80%8b%e4%ba%ba%e6%83%85%e5%a0%b1%e5%8f%96%e6%89%b1%e3%81%84%e5%90%8c%e6%84%8f%e6%9b%b8" target="_blank" rel="noopener noreferrer">Privacy Consent Agreement</a>.
+            </label>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-submit-area">
+            <button type="submit" class="form-submit-btn">
+              <svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              Submit Inquiry
+            </button>
+          </div>
+
+          <p class="form-note">
+            A representative will contact you after reviewing your inquiry.<br>
+            Positioning technology, system configuration, pricing, and deployment timeline will be proposed individually based on your facility environment and requirements.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 14. Final CTA ===== -->
+  <section class="final-cta" id="final-cta">
+    <div class="final-cta-particles"></div>
+    <div class="container">
+      <div class="final-cta-content fade-in">
+        <h2>Tell us what you want to make visible on your floor.</h2>
+        <p>Worker movement, asset locations, vehicle utilization, process-level dwell time — what you need to visualize depends on your facility.<br><br>Pinmicro Solution provides end-to-end support: from challenge discovery and technology selection, through pilot design, dashboarding, to AI-driven analytics.</p>
+        <div class="final-cta-actions">
+          <a href="#contact" class="btn btn--white btn--lg">
+            Contact Us
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--secondary btn--lg">
+            Inquire About a Pilot Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">Innovature Technologies</div>
+      <p class="footer-sub">The RTLS / location intelligence business developed by Pinmicro Inc. is now offered as a service of Innovature Technologies.</p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">&copy; 2026 Innovature Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
