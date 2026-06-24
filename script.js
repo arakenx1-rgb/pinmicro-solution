@@ -229,4 +229,112 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.5 });
 
   counters.forEach(counter => counterObserver.observe(counter));
+
+  // ---------- Download Modal (Gated Content) ----------
+  const dlModal = document.getElementById('dl-modal');
+  const dlModalClose = document.getElementById('dl-modal-close');
+  const dlModalForm = document.getElementById('dl-modal-form');
+  const dlModalDocName = document.getElementById('dl-modal-doc-name');
+  const dlTargetPdf = document.getElementById('dl-target-pdf');
+
+  if (dlModal) {
+    // Open modal on download button click
+    document.querySelectorAll('.download-btn[data-pdf]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const pdfPath = btn.getAttribute('data-pdf');
+        const pdfTitle = btn.getAttribute('data-title');
+
+        // If user already submitted in this session, download directly
+        const savedInfo = sessionStorage.getItem('dl_user_info');
+        if (savedInfo) {
+          triggerDownload(pdfPath);
+          return;
+        }
+
+        // Show modal
+        dlTargetPdf.value = pdfPath;
+        dlModalDocName.textContent = pdfTitle;
+        dlModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    // Close modal
+    function closeModal() {
+      dlModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    dlModalClose.addEventListener('click', closeModal);
+    dlModal.addEventListener('click', (e) => {
+      if (e.target === dlModal) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && dlModal.classList.contains('active')) closeModal();
+    });
+
+    // Form submit → validate → download
+    dlModalForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const requiredFields = dlModalForm.querySelectorAll('[required]');
+      let isValid = true;
+
+      requiredFields.forEach(field => {
+        if (field.type === 'checkbox') {
+          if (!field.checked) {
+            isValid = false;
+            field.closest('.form-consent').style.borderColor = '#ef4444';
+          } else {
+            field.closest('.form-consent').style.borderColor = '';
+          }
+        } else if (!field.value.trim()) {
+          isValid = false;
+          field.style.borderColor = '#ef4444';
+        } else {
+          field.style.borderColor = '';
+        }
+      });
+
+      if (!isValid) {
+        const msg = isEnglish
+          ? 'Please fill in all required fields and agree to the Privacy Consent Agreement.'
+          : '必須項目をすべてご入力ください。また、個人情報取扱い同意書への同意が必要です。';
+        alert(msg);
+        return;
+      }
+
+      // Save user info to sessionStorage (skip form on next download)
+      sessionStorage.setItem('dl_user_info', JSON.stringify({
+        company: dlModalForm.querySelector('#dl-company').value,
+        name: dlModalForm.querySelector('#dl-name').value,
+        email: dlModalForm.querySelector('#dl-email').value,
+        phone: dlModalForm.querySelector('#dl-phone').value,
+        timestamp: new Date().toISOString()
+      }));
+
+      // Trigger download
+      const pdfPath = dlTargetPdf.value;
+      triggerDownload(pdfPath);
+
+      // Close modal
+      closeModal();
+    });
+
+    // Clear error styling on input
+    dlModalForm.querySelectorAll('input, select, textarea').forEach(field => {
+      field.addEventListener('input', () => {
+        field.style.borderColor = '';
+      });
+    });
+  }
+
+  function triggerDownload(pdfPath) {
+    const a = document.createElement('a');
+    a.href = pdfPath;
+    a.download = '';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
 });

@@ -601,7 +601,7 @@
       <div class="section-header fade-in">
         <span class="section-label">Downloads</span>
         <h2 class="section-title">Free Resources</h2>
-        <p class="section-subtitle">Download useful guides to support your location intelligence DX evaluation.</p>
+        <p class="section-subtitle">Download useful guides to support your location intelligence DX evaluation.<br>Please fill in your contact information to download.</p>
       </div>
       <div class="download-grid">
         <!-- Download 1 -->
@@ -612,10 +612,10 @@
           <div class="download-card-badge">Checklist</div>
           <h3>UWB Deployment<br>On-Site Checklist</h3>
           <p>A checklist of key items to verify before deploying a UWB positioning system — covering facility environment, installation conditions, and operational considerations.</p>
-          <a href="docs/uwb-checklist.pdf" download class="download-btn">
+          <button type="button" class="download-btn" data-pdf="docs/uwb-checklist.pdf" data-title="UWB Deployment On-Site Checklist">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download PDF
-          </a>
+          </button>
         </div>
         <!-- Download 2 -->
         <div class="download-card fade-in fade-in-delay-2">
@@ -625,10 +625,10 @@
           <div class="download-card-badge">Comparison Guide</div>
           <h3>Positioning Technologies<br>Compared in 5 Minutes</h3>
           <p>A clear comparison of BLE, UWB, GPS, Wi-Fi and other major positioning technologies — covering features, accuracy, and cost differences.</p>
-          <a href="docs/positioning-comparison.pdf" download class="download-btn">
+          <button type="button" class="download-btn" data-pdf="docs/positioning-comparison.pdf" data-title="Positioning Technologies Compared in 5 Minutes">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download PDF
-          </a>
+          </button>
         </div>
         <!-- Download 3 -->
         <div class="download-card fade-in fade-in-delay-3">
@@ -638,14 +638,54 @@
           <div class="download-card-badge">Solution Manual</div>
           <h3>3 Key Facility Challenges<br>Step-by-Step Solution Manual</h3>
           <p>A practical guide to solving the three most common challenges on the factory and warehouse floor — "searching", "invisible movement", and "stalled pilots" — using location intelligence DX.</p>
-          <a href="docs/solution-manual.pdf" download class="download-btn">
+          <button type="button" class="download-btn" data-pdf="docs/solution-manual.pdf" data-title="3 Key Facility Challenges Solution Manual">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download PDF
-          </a>
+          </button>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ===== Download Modal ===== -->
+  <div class="dl-modal-overlay" id="dl-modal">
+    <div class="dl-modal">
+      <button class="dl-modal-close" id="dl-modal-close" aria-label="Close">&times;</button>
+      <div class="dl-modal-header">
+        <h3>Download Resource</h3>
+        <p class="dl-modal-doc" id="dl-modal-doc-name"></p>
+      </div>
+      <form class="dl-modal-form" id="dl-modal-form" novalidate>
+        <input type="hidden" id="dl-target-pdf" name="dl_target_pdf" value="">
+        <div class="dl-modal-field">
+          <label for="dl-company">Company <span class="form-required">Required</span></label>
+          <input type="text" class="form-input" id="dl-company" name="dl_company" placeholder="e.g. Innovature Technologies Inc." required>
+        </div>
+        <div class="dl-modal-field">
+          <label for="dl-name">Full Name <span class="form-required">Required</span></label>
+          <input type="text" class="form-input" id="dl-name" name="dl_name" placeholder="e.g. Taro Yamada" required>
+        </div>
+        <div class="dl-modal-field">
+          <label for="dl-email">Email <span class="form-required">Required</span></label>
+          <input type="email" class="form-input" id="dl-email" name="dl_email" placeholder="e.g. example@company.com" required>
+        </div>
+        <div class="dl-modal-field">
+          <label for="dl-phone">Phone <span class="form-required">Required</span></label>
+          <input type="tel" class="form-input" id="dl-phone" name="dl_phone" placeholder="e.g. +81-3-1234-5678" required>
+        </div>
+        <div class="form-consent" style="margin: 20px 0; padding: 16px;">
+          <input type="checkbox" id="dl-consent" name="dl_consent" required>
+          <label for="dl-consent">
+            I agree to the <a href="https://pinmicro.jp/%e5%80%8b%e4%ba%ba%e6%83%85%e5%a0%b1%e5%8f%96%e6%89%b1%e3%81%84%e5%90%8c%e6%84%8f%e6%9b%b8" target="_blank" rel="noopener noreferrer">Privacy Consent Agreement</a>.
+          </label>
+        </div>
+        <button type="submit" class="form-submit-btn" style="width:100%;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Submit &amp; Download
+        </button>
+      </form>
+    </div>
+  </div>
 
   <!-- ===== 13. FAQ ===== -->
   <section class="section" id="faq">
