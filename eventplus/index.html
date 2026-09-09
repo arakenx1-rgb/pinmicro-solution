@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EventPlus | リアルイベントの来場者行動を可視化</title>
+  <meta name="description" content="EventPlusは、受付情報とBLE・スマートフォン・UWBによる位置情報を組み合わせ、ブース訪問、滞在、回遊、混雑、VIP対応、イベント後の分析を支援するリアルイベント向けソリューションです。" />
+  <meta name="theme-color" content="#0b5ea8" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="company-brand" href="#top" aria-label="Innovature Technologies トップへ">
+      <img src="assets/innovature-logo.jpg" alt="Innovature Technologies" />
+    </a>
+    <button class="menu-button" aria-controls="global-nav" aria-expanded="false">メニュー</button>
+    <nav class="global-nav" id="global-nav" aria-label="主要ナビゲーション">
+      <a href="#about">EventPlusとは</a>
+      <a href="#reception">受付・紐付け</a>
+      <a href="#architecture">システム構成</a>
+      <a href="#options">オプション</a>
+      <a href="#partners">パートナー</a>
+      <a href="#faq">FAQ</a>
+      <a href="../">Pinmicro Solutions</a>
+      <a href="en/" lang="en">English</a>
+      <a class="nav-download" href="#download">資料ダウンロード</a>
+      <a class="nav-contact" href="https://innovaturetech.com/solutions-and-services-inquiries/">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <img class="product-logo" src="assets/eventplus-logo-transparent.png" alt="EventPlus" />
+        <p class="eyebrow">REAL EVENT × LOCATION INTELLIGENCE</p>
+        <h1 class="hero-title"><span>イベントの「来場者数」</span><span>だけで終わらせない。</span></h1>
+        <p class="hero-lead">誰が、どこを訪れ、どのくらい滞在し、何に関心を持ったのか。EventPlusは、受付情報と会場内の行動データをつなぎ、イベント運営と次の営業・マーケティングに活かせる情報へ変えます。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#download">資料ダウンロード</a>
+          <a class="button secondary" href="https://innovaturetech.com/solutions-and-services-inquiries/">導入について相談する</a>
+        </div>
+        <div class="hero-proof">
+          <span><b>数十人</b>のデモ・ショールームから</span>
+          <span><b>15万人規模</b>の大規模展示会まで</span>
+          <span><b>お客様仕様に柔軟にカスタマイズ可能</b></span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/hero-venue.jpg" alt="イベント会場内の位置・行動データを可視化するイメージ" />
+        <div class="float-chip chip-one">どこに人が集まっている？</div>
+        <div class="float-chip chip-two">どのブースに長く滞在？</div>
+        <div class="float-chip chip-three">重要顧客は今どこ？</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section intro" id="about">
+    <div class="container">
+      <div class="section-heading narrow">
+        <p class="section-kicker">WHAT EVENTPLUS DOES</p>
+        <h2>リアルイベントの「今」と「結果」を、<br>データで見える化。</h2>
+        <p>位置情報を取るだけではなく、会場運営・営業アテンド・出展者支援・イベント後の振り返りまで、イベントの目的に合わせて活用できます。</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="visual-card">
+          <img src="assets/feature-location.jpg" alt="会場内の位置情報イメージ" />
+          <div><h3>来場者の位置把握</h3><p>会場内の来場者や対象者の位置を把握。VIP対応や運営判断に活用します。</p></div>
+        </article>
+        <article class="visual-card">
+          <img src="assets/feature-dwell.jpg" alt="ブース滞在時間の分析画面" />
+          <div><h3>ブース訪問・滞在</h3><p>どのブースやエリアを訪れ、どの程度滞在したかを記録・分析します。</p></div>
+        </article>
+        <article class="visual-card">
+          <img src="assets/feature-route.jpg" alt="ヒートマップ画面" />
+          <div><h3>回遊・ヒートマップ</h3><p>会場全体の回遊傾向や人気エリア、時間帯ごとの混雑を可視化します。</p></div>
+        </article>
+        <article class="visual-card">
+          <img src="assets/feature-vip.jpg" alt="VIP来場者対応のイメージ" />
+          <div><h3>VIP・重要顧客対応</h3><p>重要顧客の来場や接近を把握し、営業・案内担当者の初動を支援します。</p></div>
+        </article>
+        <article class="visual-card">
+          <img src="assets/feature-realtime.jpg" alt="会場混雑可視化のイメージ" />
+          <div><h3>リアルタイム運営</h3><p>混雑・滞留を把握し、スタッフ配置や案内、相談席の運営改善に活用します。</p></div>
+        </article>
+        <article class="visual-card">
+          <img src="assets/feature-analysis.jpg" alt="来場者関心分析のイメージ" />
+          <div><h3>イベント後の分析</h3><p>訪問・滞在・属性などを組み合わせ、次回企画や営業フォローの材料にします。</p></div>
+        </article>
+      </div>
+
+      <div class="flex-band">
+        <div><strong>小規模から大規模まで</strong><span>数十人規模のデモ・ショールーム、商談会、採用イベント、カンファレンス、大規模展示会まで対応。</span></div>
+        <div><strong>要件に合わせた柔軟な設計</strong><span>受付方法、デバイス、会場レイアウト、取得したいデータ、既存システムとの連携など、お客様仕様に合わせて構成します。</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reception-section" id="reception">
+    <div class="container">
+      <div class="split-heading">
+        <div>
+          <p class="section-kicker">RECEPTION & ID LINKING</p>
+          <h2>受付で「来場者ID」と「位置情報ID」を紐付け。</h2>
+        </div>
+        <p>個人単位の行動データを取得する場合は、受付時に参加者QRとBeacon Card等のデバイスIDを紐付けます。現場の受付オペレーションを考慮し、短い手順で運用できるよう設計します。</p>
+      </div>
+
+      <div class="steps" aria-label="受付紐付け4ステップ">
+        <div class="step"><span class="step-no">01</span><h3>参加者QRを読取</h3><p>事前登録済みの参加者QRを受付端末で読み取ります。</p></div>
+        <div class="step-arrow">→</div>
+        <div class="step"><span class="step-no">02</span><h3>デバイスQRを読取</h3><p>配布するBeacon Card等のIDを読み取ります。</p></div>
+        <div class="step-arrow">→</div>
+        <div class="step"><span class="step-no">03</span><h3>IDを紐付け</h3><p>参加者情報とデバイスIDをEventPlus上で登録します。</p></div>
+        <div class="step-arrow">→</div>
+        <div class="step"><span class="step-no">04</span><h3>トラッキング開始</h3><p>カードを渡して入場。会場内の行動データ取得を開始します。</p></div>
+      </div>
+
+      <div class="reception-grid">
+        <figure class="screen-card">
+          <img src="assets/reception-ticket.jpg" alt="QRコード付き来場者入場券のイメージ" />
+          <figcaption>来場者の入場券QRを読み取り、配布するBeacon CardのIDとその場で紐付け登録。</figcaption>
+        </figure>
+        <div class="reception-copy">
+          <span class="small-label">受付全体の提供も可能</span>
+          <h3>紐付けだけでなく、受付・入退場管理までEventPlusで対応できます。</h3>
+          <p>既存の参加者リストを取り込んで位置情報IDのみを紐付ける運用にも、EventPlusで事前登録・QR受付・入退場まで一括提供する運用にも対応できます。</p>
+          <ul class="check-list">
+            <li>QRによる受付・入退場管理</li>
+            <li>参加者IDとBeacon IDの紐付け</li>
+            <li>複数受付レーン、配布導線など現場運用に合わせた設計</li>
+            <li>既存受付・イベント管理システムとの連携相談</li>
+          </ul>
+          <p class="note">受付人数やピーク時間に応じ、レーン数や事前準備を含めて受付渋滞を抑える運用をご提案します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section architecture-section" id="architecture">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">ARCHITECTURE</p>
+        <h2>イベント規模と運用に合わせて、2つの代表構成から最適化。</h2>
+        <p>Beacon Cardを来場者に配る方式と、スマートフォンを活用する方式を中心に、必要に応じてUWBも組み合わせます。</p>
+      </div>
+
+      <article class="architecture-card">
+        <div class="arch-head">
+          <div><span class="arch-number">01</span><h3>Beacon Card構成</h3><p>個人単位で確実に来場者行動を取得したいイベントに。</p></div>
+          <div class="recommend-tag">展示会 / 商談会 / 採用イベント / VIP対応</div>
+        </div>
+        <div class="arch-diagram beacon-flow">
+          <div class="arch-node person-node">
+            <img src="assets/beacon-card.png" alt="Beacon Card" />
+            <b>来場者</b><span>Beacon Cardを携帯</span>
+          </div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node dual-device">
+            <div class="dual-images"><img src="assets/cloudsense-sensor.png" alt="CloudSense センサー" /><img src="assets/gatewaylink.png" alt="GatewayLink" /></div>
+            <b>ブース / エリア</b><span>CloudSense・GatewayLink等で検知・集約</span>
+          </div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node network-node"><div class="network-icon">Wi‑Fi</div><b>ネットワーク</b><span>収集データをクラウドへ送信</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node cloud-node"><div class="cloud-icon">☁</div><b>クラウド</b><span>位置・訪問・滞在データを集約</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node web-node"><img src="assets/heatmap-dashboard.png" alt="EventPlus Web画面" /><b>EventPlus</b><span>Webでリアルタイム表示・分析</span></div>
+        </div>
+        <div class="arch-explain">Beacon Cardを持った来場者がブース周辺の検知範囲に入ると、CloudSense等のセンサーが信号を検知。データを集約し、Wi‑Fi経由でクラウドへ送信してEventPlus上で可視化します。</div>
+      </article>
+
+      <article class="architecture-card smartphone-arch">
+        <div class="arch-head">
+          <div><span class="arch-number">02</span><h3>Smartphone構成</h3><p>十万人規模など、全来場者へのカード配布が現実的でない大規模イベントに。</p></div>
+          <div class="recommend-tag green">大規模展示会 / 公式アプリ連携</div>
+        </div>
+        <div class="arch-diagram smartphone-flow">
+          <div class="arch-node booth-beacon"><img src="assets/beacon-card.png" alt="ブース設置Beacon" /><b>各ブース</b><span>Beaconを設置</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node phone-node"><div class="phone-shell"><span>APP</span></div><b>来場者スマートフォン</b><span>受付時にアプリを案内・インストール</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node detect-node"><div class="radio-icon">)))</div><b>アプリで検知</b><span>アプリ起動中に周辺Beaconを検知</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node cloud-node"><div class="cloud-icon">☁</div><b>クラウド</b><span>検知情報を送信・蓄積</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node web-node"><img src="assets/heatmap-dashboard.png" alt="EventPlus Web画面" /><b>EventPlus</b><span>ヒートマップ・訪問分析</span></div>
+        </div>
+        <div class="arch-explain"><strong>CEATEC等の大規模展示会での実績：</strong>15万人規模のイベントでは、全員にカードを配布するのではなく、公式アプリを利用した方式を採用。アプリをインストール・起動した来場者を中心に、約3割程度（4〜5万人規模）の位置データを取得した実績があります。<small>※取得率はイベント条件、アプリ導入率、起動状況等により変動します。</small></div>
+      </article>
+
+      <div class="device-row">
+        <article class="device-mini"><img src="assets/beacon-card.png" alt="Beacon Card" /><div><span>BLE</span><h3>Beacon Card</h3><p>来場者配布またはブース設置に使用。</p></div></article>
+        <article class="device-mini"><img src="assets/cloudsense-sensor.png" alt="CloudSense センサー" /><div><span>SENSOR</span><h3>CloudSense</h3><p>ブース・エリアのビーコンを検知するセンサー。</p></div></article>
+        <article class="device-mini"><img src="assets/uwb-card-clean.png" alt="UWB Card" /><div><span>UWB</span><h3>UWB Card</h3><p>高精度な位置・滞在把握が必要な用途に。</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section realtime-section" id="usecases">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">REAL-TIME USE</p>
+        <h2>イベント中の「今」を、運営と営業に活かす。</h2>
+      </div>
+      <div class="usecase-grid">
+        <article class="usecase-card"><img src="assets/vip-guide.png" alt="VIP対応" /><div><h3>VIP・重要顧客への即時対応</h3><p>重要顧客の来場・接近を把握し、担当営業や受付スタッフへ共有。会場が広い場合でも初動を早めます。</p></div></article>
+        <article class="usecase-card"><img src="assets/crowd-optimization.png" alt="混雑可視化" /><div><h3>混雑・相談席の運営最適化</h3><p>ブースや相談席ごとの滞留を確認し、スタッフ配置や案内を調整。現場運営をデータで支援します。</p></div></article>
+        <article class="usecase-card"><img src="assets/hotlead-analysis.png" alt="ホットリード分析" /><div><h3>関心テーマ・ホットリードの把握</h3><p>どのテーマにどの程度滞在したかを分析し、イベント後の営業フォローや出展者支援につなげます。</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="download-band" id="download">
+    <div class="container download-grid">
+      <div><p class="section-kicker light">DOWNLOAD</p><h2>EventPlusの仕組み・活用例をまとめた資料</h2><p>受付・位置情報取得・リアルタイム活用・分析・オプションまで、EventPlusの全体像をご確認いただけます。</p></div>
+      <div class="download-action"><a class="button white" href="https://innovaturetech.com/solutions-and-services-inquiries/">資料ダウンロード</a><small>※公開時に資料ダウンロードフォームへ接続予定</small></div>
+    </div>
+  </section>
+
+  <section class="section analysis-section" id="analysis">
+    <div class="container">
+      <div class="split-heading">
+        <div><p class="section-kicker">ANALYSIS & REPORT</p><h2>会場の動きを、振り返れるデータへ。</h2></div>
+        <p>ヒートマップ、ブース滞在、来場者属性、流入・流出、時間帯別の傾向などを確認できます。イベント後の振り返りや次回企画の検討材料として活用できます。</p>
+      </div>
+      <div class="analysis-grid balanced">
+        <figure><img src="assets/analysis-industry.jpg" alt="来場者属性分析" /><figcaption>来場者属性</figcaption></figure>
+        <figure><img src="assets/analysis-flow.jpg" alt="流入流出分析" /><figcaption>ブース流入・流出</figcaption></figure>
+        <figure><img src="assets/analysis-time.jpg" alt="時間帯別分析" /><figcaption>時間帯別の来場傾向</figcaption></figure>
+        <figure class="analysis-heatmap"><img src="assets/heatmap-dashboard.png" alt="ヒートマップ分析画面" /><figcaption>会場・ブースの混雑 / ヒートマップ</figcaption></figure>
+      </div>
+      <div class="quality-note">
+        <strong>レポートは、元データと集計条件を確認できる運用を重視。</strong>
+        <p>EventPlusでは、収集データをダッシュボードやCSV等で確認しながら分析・レポート作成を支援します。集計値や条件を確認したうえで成果物を確定する運用を前提とし、手作業による集計工程をできるだけ減らす方向で設計します。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section options-section" id="options">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">OPTIONS</p>
+        <h2>主催者・営業・出展者、それぞれの現場を支援。</h2>
+      </div>
+      <div class="option-grid">
+        <article class="option-card guide guide-wide">
+          <div class="option-copy">
+            <span class="option-type">主催者・営業向け</span>
+            <h3>GuidePlus</h3>
+            <p class="option-lead">会いたい来場者を、その場で見つける。</p>
+            <p>氏名・会社名などから対象者を検索し、対象者リストを作成。最新位置をマップで確認し、VIP対応や営業アテンド、ビジネスマッチングを支援します。</p>
+            <ul class="check-list"><li>来場者の検索・リスト化</li><li>対象者リストの作成</li><li>最新位置のマップ確認</li><li>VIP・重要顧客対応</li><li>営業・案内担当者の行動支援</li></ul>
+          </div>
+          <div class="guide-screens" aria-label="GuidePlus画面イメージ">
+            <figure><img src="assets/guide-search.jpg" alt="GuidePlus 検索画面" /><figcaption>1. 対象者を検索</figcaption></figure>
+            <figure><img src="assets/guide-list.jpg" alt="GuidePlus リスト画面" /><figcaption>2. 対象者をリスト化</figcaption></figure>
+            <figure><img src="assets/guide-map.jpg" alt="GuidePlus マップ画面" /><figcaption>3. 最新位置をマップで確認</figcaption></figure>
+          </div>
+        </article>
+
+        <article class="option-card exhibitor">
+          <div class="option-copy">
+            <span class="option-type">出展者向け</span>
+            <h3>ExhibitorPlus</h3>
+            <p class="option-lead">ブース来訪を、その場で商談につなげる。</p>
+            <p>来場者のQR読取、来訪者リスト、顧客コメントなどをスマートフォンで管理。出展者の営業活動を支援します。</p>
+            <ul class="check-list"><li>来場者QRの読み取り</li><li>来訪者リスト管理</li><li>顧客情報への簡易コメント</li><li>パンフレット送信連携</li></ul>
+          </div>
+          <div class="exhibitor-phones"><img src="assets/exhibitor-list.png" alt="ExhibitorPlus 来訪者リスト" /><img src="assets/exhibitor-detail.png" alt="ExhibitorPlus 顧客コメント" /></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section partner-section" id="partners">
+    <div class="container">
+      <div class="section-heading narrow">
+        <p class="section-kicker">FOR EVENT PARTNERS</p>
+        <h2>イベント制作会社・運営会社の提案価値を、EventPlusで広げる。</h2>
+        <p>既存のイベント企画や受付システムを置き換えるのではなく、「リアル会場の行動データ」を追加する形で共同提案できます。案件ごとに技術説明、構成設計、現地設置、運用、分析まで支援します。</p>
+      </div>
+
+      <div class="partner-benefit-grid">
+        <article class="partner-benefit">
+          <span class="partner-label">イベント制作会社向け</span>
+          <h3>提案を「演出・運営」から「成果の可視化」まで拡張。</h3>
+          <ul>
+            <li><b>提案差別化：</b>来場者数だけではない、訪問・滞在・回遊という付加価値を提案。</li>
+            <li><b>追加提案：</b>主催者向け分析、GuidePlus、出展者向けExhibitorPlusなどを組み合わせ可能。</li>
+            <li><b>次回案件につながる：</b>イベント後のデータを次回の会場設計・企画改善に活用。</li>
+            <li><b>技術部分を弊社が支援：</b>BLE/UWB、センサー設計、クラウド、分析部分を共同で対応。</li>
+          </ul>
+        </article>
+        <article class="partner-benefit">
+          <span class="partner-label">イベント運営会社向け</span>
+          <h3>受付・会場運営を、リアルタイムデータで支援。</h3>
+          <ul>
+            <li><b>受付支援：</b>参加者QRとBeacon IDの紐付け、受付・入退場管理まで対応可能。</li>
+            <li><b>現場判断：</b>混雑・滞留・重要顧客の位置を確認し、スタッフ配置や案内に活用。</li>
+            <li><b>運用設計：</b>配布・回収、受付レーン、ネットワーク、センサー設置を事前に設計。</li>
+            <li><b>手作業削減：</b>会場データを直接蓄積し、イベント後の集計作業を減らす方向で支援。</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="partner-flow">
+        <div><span>1</span><b>案件相談</b><p>イベント規模・目的・課題を共有</p></div>
+        <i>→</i>
+        <div><span>2</span><b>共同提案</b><p>構成・取得データ・運用を設計</p></div>
+        <i>→</i>
+        <div><span>3</span><b>現地準備</b><p>受付・センサー・ネットワーク確認</p></div>
+        <i>→</i>
+        <div><span>4</span><b>本番運用</b><p>設置・サポート・リアルタイム活用</p></div>
+        <i>→</i>
+        <div><span>5</span><b>分析</b><p>イベント後の振り返りを支援</p></div>
+      </div>
+
+      <div class="integration-note">
+        <strong>既存の受付・イベント管理システムとの連携もご相談ください。</strong>
+        <p>現在利用中の受付・申込基盤を残し、参加者IDとEventPlusの位置・行動データを組み合わせる構成も検討できます。案件ごとの要件に応じてCSV/API等の連携方式を確認します。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section intelligence-section" id="intelligence">
+    <div class="container intelligence-panel">
+      <div class="intelligence-copy">
+        <div class="future-badge">将来構想 / 社内検討中</div>
+        <p class="section-kicker">EVENT INTELLIGENCE — EVENTPLUS × AI</p>
+        <h2>蓄積したイベントデータに、自然言語で問いかける。</h2>
+        <p>EventPlusで取得した検証済みのデータをAIと組み合わせ、分析の切り口を探したり、レポート作成を支援したりする「Event Intelligence」の可能性を検討しています。</p>
+        <p class="caution">※現在の標準提供機能ではありません。実装内容・提供時期は未定です。</p>
+      </div>
+      <div class="ai-examples">
+        <div class="ai-chat"><b>Q.</b><span>製造業の管理職で、Aブースに10分以上滞在した来場者は？</span><p><b>想定する回答：</b>条件に一致する対象者・人数・訪問履歴を抽出し、営業フォロー候補を確認。</p></div>
+        <div class="ai-chat"><b>Q.</b><span>前回イベントと比べて、関心が伸びたテーマは？</span><p><b>想定する回答：</b>前回と今回の滞在時間・訪問数・回遊傾向を比較し、変化したテーマを提示。</p></div>
+        <div class="ai-chat"><b>Q.</b><span>今回のイベントで改善すべき運営ポイントは？</span><p><b>想定する回答：</b>混雑時間帯、滞留箇所、来場者の回遊傾向をもとに改善候補を整理。</p></div>
+      </div>
+      <div class="recurring-benefit">
+        <h3>年に複数回イベントを開催する企業ほど、データ蓄積の価値が高まります。</h3>
+        <div class="recurring-grid">
+          <div><b>イベント間比較</b><span>春・秋、地域別、年度別などで同じKPIを比較。</span></div>
+          <div><b>関心テーマの推移</b><span>どのテーマ・ブースの関心が伸びているかを追跡。</span></div>
+          <div><b>継続来場の把握</b><span>同意・ID設計の範囲内で、継続来場者や新規来場者を比較。</span></div>
+          <div><b>レポートの標準化</b><span>毎回同じ指標で振り返り、社内報告の効率化を支援。</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section case-section" id="case">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">CASE STUDY</p>
+        <h2>小規模デモから、15万人規模の大規模イベントまで。</h2>
+        <p>公開可能な実績を中心に、実際の会場で位置情報・行動データ活用を行ってきました。</p>
+      </div>
+      <article class="case-card">
+        <div class="case-photo"><img src="assets/ceatec-photo.jpg" alt="CEATEC会場でのリアルタイムヒートマップ展示" /></div>
+        <div class="case-copy">
+          <span class="case-label">CEATEC JAPAN</span>
+          <h3>公式アプリ連携・リアルタイムヒートマップ</h3>
+          <p>公式アプリと位置情報を組み合わせ、会場内のヒートマップ、ブース検索・ナビゲーション、訪問行動の可視化などを実施しました。</p>
+          <div class="case-stats"><div><b>2017–2022</b><span>公式アプリパートナー施策</span></div><div><b>15万人規模</b><span>大規模展示会での実績</span></div></div>
+        </div>
+      </article>
+      <div class="case-subgrid"><figure><img src="assets/ceatec-mode.jpg" alt="CEATEC公式モード" /><figcaption>ヒートマップ、ブース検索・ナビゲーション、訪問自動記録などの活用例</figcaption></figure><figure><img src="assets/heatmap-dashboard.png" alt="ヒートマップ分析" /><figcaption>会場内の混雑・ブース訪問データの可視化例</figcaption></figure></div>
+    </div>
+  </section>
+
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-heading narrow"><p class="section-kicker">FAQ</p><h2>よくあるご質問</h2><p>導入検討時によくいただくご質問をカテゴリ別にまとめました。</p></div>
+
+      <div class="faq-category">
+        <h3>デバイスに関するご質問</h3>
+        <div class="faq-list">
+          <details><summary>ビーコンカードは来場者全員に配布しますか？</summary><p>取得したいデータとイベント規模によります。個人単位で来場者全体の行動を把握する場合は全員配布が基本ですが、VIPや特定参加者だけを対象にする運用も可能です。十万人規模の大規模イベントでは、スマートフォン方式を推奨する場合があります。</p></details>
+          <details><summary>ビーコンカードの回収はどのようにしますか？</summary><p>退場口での回収、専用回収ボックス、スタッフによる案内など、会場導線に合わせて設計します。入退場が複数箇所ある場合は、回収ポイントを複数設ける方法もあります。</p></details>
+          <details><summary>ビーコンを持ち帰られたり、紛失するケースはありますか？</summary><p>一定の紛失リスクはあります。ネックストラップでの装着、退場時の返却案内、回収導線の明確化、予備在庫の準備などによりリスクを抑えます。</p></details>
+          <details><summary>精度はどのくらいですか？</summary><p>BLEは「どのブース・ゾーンに滞在したか」というエリア判定を主目的とし、会場環境、遮蔽物、センサー配置等により精度は変動します。より高精度な位置測位が必要な場合はUWBをご提案します。</p></details>
+          <details><summary>UWBはどんなイベントで使えますか？</summary><p>VIPや重要顧客の詳細な位置把握、商談席・相談テーブルの滞在分析、小規模な高精度デモ、限られたエリアの詳細な動線解析などに向いています。</p></details>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h3>ネットワークに関するご質問</h3>
+        <div class="faq-list">
+          <details><summary>ネットワーク環境はどうすればよいですか？</summary><p>会場のWi‑Fi、インターネット回線、電源条件を事前に確認し、センサー・Gatewayの配置と合わせて構成を設計します。会場条件によってはLANやモバイル回線等も含めて検討します。</p></details>
+          <details><summary>Wi‑Fiの帯域が混雑してシステムダウンしませんか？</summary><p>大規模イベントでは一般来場者用Wi‑Fiと同じ環境に依存しすぎないよう、専用SSID・専用回線・有線接続・モバイル回線などを含めて設計し、事前テストを行うことが重要です。会場環境に応じた冗長化や運用方法をご提案します。</p></details>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h3>受付システムに関するご質問</h3>
+        <div class="faq-list">
+          <details><summary>紐付けに時間がかかり、受付が渋滞することはないですか？</summary><p>参加者QRとデバイスQRを連続して読み取るシンプルな手順にしています。想定来場者数とピーク時間に応じて受付レーンを増やす、Beacon Cardの配布工程を分ける、事前にデバイスを準備するなど、受付導線を設計することで渋滞を抑えます。</p></details>
+          <details><summary>QRとの紐付けだけでなく、受付機能全部を提供することは可能ですか？</summary><p>可能です。事前登録、QR受付、入退場管理、参加者情報とBeacon IDの紐付けまでEventPlus側で提供する構成にも対応できます。</p></details>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h3>レポート・AIに関するご質問</h3>
+        <div class="faq-list">
+          <details><summary>イベント後のレポートも対応可能ですか？</summary><p>可能です。ヒートマップ、ブース訪問、滞在時間、来場者属性、時間帯別傾向など、取得データをもとに分析・レポート作成を支援します。集計値と元データを確認しながら成果物を確定する運用を重視します。</p></details>
+          <details><summary>AIとの連携でどのようなことが可能ですか？</summary><p>将来構想として、蓄積されたイベントデータに自然言語で問いかけ、条件に合う来場者や傾向を抽出する分析支援、前回イベントとの比較、レポート文章の作成支援などを検討しています。現時点では標準提供機能ではありません。</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-download">
+    <div class="container final-download-grid">
+      <div><img src="assets/eventplus-logo-transparent.png" alt="EventPlus" /><h2>まずは資料で、EventPlusの全体像をご確認ください。</h2><p>イベント規模・取得したいデータ・受付方式・会場条件に応じた構成をご提案します。</p></div>
+      <div><a class="button primary large" href="#download">資料ダウンロード</a><a class="button secondary large" href="https://innovaturetech.com/solutions-and-services-inquiries/">お問い合わせ</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-company"><img src="assets/innovature-logo.jpg" alt="Innovature Technologies" /><span>EventPlus / Pinmicro Location Solutions</span></div>
+    <div class="footer-links"><a href="../">Pinmicroソリューション</a><a href="en/" lang="en">English</a><a href="https://innovaturetech.com/solutions-and-services-inquiries/">お問い合わせ</a></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

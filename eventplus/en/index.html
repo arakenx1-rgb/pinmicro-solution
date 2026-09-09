@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EventPlus | Turn Real-World Event Behavior into Actionable Data</title>
+  <meta name="description" content="EventPlus combines registration data with location data from BLE, smartphones and UWB to visualize booth visits, dwell time, traffic flow and congestion, support VIP engagement, and enable post-event analysis." />
+  <meta name="theme-color" content="#0b5ea8" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="lang-en">
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="company-brand" href="#top" aria-label="Back to top - Innovature Technologies">
+      <img src="assets/innovature-logo.jpg" alt="Innovature Technologies" />
+    </a>
+    <button class="menu-button" aria-controls="global-nav" aria-expanded="false">Menu</button>
+    <nav class="global-nav" id="global-nav" aria-label="Primary navigation">
+      <a href="#about">About EventPlus</a>
+      <a href="#reception">Reception & ID Linking</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#options">Options</a>
+      <a href="#partners">For Partners</a>
+      <a href="#faq">FAQ</a>
+      <a href="../../">Pinmicro Solutions</a>
+      <a href="../" lang="ja">日本語</a>
+      <a class="nav-download" href="#download">Download Brochure</a>
+      <a class="nav-contact" href="https://innovaturetech.com/solutions-and-services-inquiries/">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <img class="product-logo" src="assets/eventplus-logo-transparent.png" alt="EventPlus" />
+        <p class="eyebrow">REAL EVENT × LOCATION INTELLIGENCE</p>
+        <h1 class="hero-title"><span>Don’t stop at</span><span>attendee counts.</span></h1>
+        <p class="hero-lead">Who went where, how long they stayed, and what captured their interest. EventPlus connects registration data with in-venue behavior data and turns it into insights that support event operations, sales follow-up, and marketing.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#download">Download Brochure</a>
+          <a class="button secondary" href="https://innovaturetech.com/solutions-and-services-inquiries/">Talk to Us</a>
+        </div>
+        <div class="hero-proof">
+          <span>From demos and showrooms with <b>dozens of attendees</b></span>
+          <span>to exhibitions with <b>150,000+ attendees</b></span>
+          <span><b>Flexible customization to fit your requirements</b></span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/hero-venue.jpg" alt="Illustration of in-venue location and behavioral data visualization" />
+        <div class="float-chip chip-one">Where are people gathering?</div>
+        <div class="float-chip chip-two">Which booths hold attention longest?</div>
+        <div class="float-chip chip-three">Where are key guests now?</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section intro" id="about">
+    <div class="container">
+      <div class="section-heading narrow">
+        <p class="section-kicker">WHAT EVENTPLUS DOES</p>
+        <h2>Visualize what is happening now —<br>and what it delivered.</h2>
+        <p>Go beyond location tracking. EventPlus can support live operations, sales engagement, exhibitor services, and post-event review — configured around your event objectives.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="visual-card">
+          <img src="assets/feature-location.jpg" alt="In-venue location tracking" />
+          <div><h3>Visitor Location</h3><p>Understand where visitors or selected guests are in the venue and use that information for VIP support and real-time operational decisions.</p></div>
+        </article>
+        <article class="visual-card">
+          <img src="assets/feature-dwell.jpg" alt="Booth dwell-time analytics" />
+          <div><h3>Booth Visits & Dwell Time</h3><p>Record and analyze which booths or areas were visited and how long attendees stayed.</p></div>
+        </article>
+        <article class="visual-card">
+          <img src="assets/feature-route.jpg" alt="Traffic flow and heatmap" />
+          <div><h3>Traffic Flow & Heatmaps</h3><p>Visualize traffic patterns, popular areas and congestion by time of day across the venue.</p></div>
+        </article>
+        <article class="visual-card">
+          <img src="assets/feature-vip.jpg" alt="VIP and key guest engagement" />
+          <div><h3>VIP & Key Guest Support</h3><p>Detect the arrival or approach of important guests and help sales or hospitality teams respond quickly.</p></div>
+        </article>
+        <article class="visual-card">
+          <img src="assets/feature-realtime.jpg" alt="Real-time venue operations" />
+          <div><h3>Real-Time Operations</h3><p>Use congestion and dwell data to improve staffing, guidance and consultation-area operations.</p></div>
+        </article>
+        <article class="visual-card">
+          <img src="assets/feature-analysis.jpg" alt="Post-event analytics" />
+          <div><h3>Post-Event Analytics</h3><p>Combine visit, dwell-time and profile data to inform follow-up activity and improve future events.</p></div>
+        </article>
+      </div>
+
+      <div class="flex-band">
+        <div><strong>From small to very large events</strong><span>Supports demos and showrooms with dozens of visitors, business meetings, recruiting events, conferences and major exhibitions.</span></div>
+        <div><strong>Flexible architecture for your requirements</strong><span>Reception workflow, devices, venue layout, data requirements and integration with existing systems can all be tailored to your event.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reception-section" id="reception">
+    <div class="container">
+      <div class="split-heading">
+        <div>
+          <p class="section-kicker">RECEPTION & ID LINKING</p>
+          <h2>Link attendee IDs with location IDs at reception.</h2>
+        </div>
+        <p>When attendee-level behavioral data is required, the attendee QR code is linked to a Beacon Card or other device ID at reception. The workflow is designed to remain quick and practical for on-site operations.</p>
+      </div>
+
+      <div class="steps" aria-label="Four-step attendee ID linking workflow">
+        <div class="step"><span class="step-no">01</span><h3>Scan Attendee QR</h3><p>Scan the pre-registered attendee QR code at the reception terminal.</p></div>
+        <div class="step-arrow">→</div>
+        <div class="step"><span class="step-no">02</span><h3>Scan Device QR</h3><p>Scan the ID of the Beacon Card or other device being issued.</p></div>
+        <div class="step-arrow">→</div>
+        <div class="step"><span class="step-no">03</span><h3>Link the IDs</h3><p>Register the attendee information and device ID in EventPlus.</p></div>
+        <div class="step-arrow">→</div>
+        <div class="step"><span class="step-no">04</span><h3>Start Tracking</h3><p>Issue the card and admit the attendee. In-venue behavioral data collection begins.</p></div>
+      </div>
+
+      <div class="reception-grid">
+        <figure class="screen-card">
+          <img src="assets/reception-ticket.jpg" alt="Example attendee ticket with QR code" />
+          <figcaption>Scan the attendee ticket QR code and link it to the issued Beacon Card ID on the spot.</figcaption>
+        </figure>
+        <div class="reception-copy">
+          <span class="small-label">Full reception workflow available</span>
+          <h3>EventPlus can manage reception and entry/exit — not only ID linking.</h3>
+          <p>You can import an existing attendee list and use EventPlus only for location-ID linking, or use EventPlus for the full flow from pre-registration and QR reception through entry/exit management.</p>
+          <ul class="check-list">
+            <li>QR-based reception and entry/exit management</li>
+            <li>Link attendee IDs with Beacon IDs</li>
+            <li>Design for multiple reception lanes and on-site distribution flow</li>
+            <li>Integration options for existing reception and event-management systems</li>
+          </ul>
+          <p class="note">We design the number of lanes, pre-configuration and distribution process around expected volume and peak arrival times to reduce congestion at reception.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section architecture-section" id="architecture">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">ARCHITECTURE</p>
+        <h2>Two representative architectures, optimized for your event scale and operations.</h2>
+        <p>The two main approaches are attendee-issued Beacon Cards and smartphone-based detection, with UWB added where higher precision is required.</p>
+      </div>
+
+      <article class="architecture-card">
+        <div class="arch-head">
+          <div><span class="arch-number">01</span><h3>Beacon Card Architecture</h3><p>For events that require reliable attendee-level behavioral data.</p></div>
+          <div class="recommend-tag">Exhibitions / Business Meetings / Recruiting / VIP Support</div>
+        </div>
+        <div class="arch-diagram beacon-flow">
+          <div class="arch-node person-node">
+            <img src="assets/beacon-card.png" alt="Beacon Card" />
+            <b>Attendee</b><span>Carries a Beacon Card</span>
+          </div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node dual-device">
+            <div class="dual-images"><img src="assets/cloudsense-sensor.png" alt="CloudSense sensor" /><img src="assets/gatewaylink.png" alt="GatewayLink" /></div>
+            <b>Booth / Area</b><span>Detected and aggregated by CloudSense / GatewayLink</span>
+          </div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node network-node"><div class="network-icon">Wi‑Fi</div><b>Network</b><span>Send collected data to the cloud</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node cloud-node"><div class="cloud-icon">☁</div><b>Cloud</b><span>Aggregate location, visit and dwell data</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node web-node"><img src="assets/heatmap-dashboard.png" alt="EventPlus web dashboard" /><b>EventPlus</b><span>Real-time Web visualization and analytics</span></div>
+        </div>
+        <div class="arch-explain">When an attendee carrying a Beacon Card enters a booth or area detection zone, CloudSense or related sensors detect the signal. Data is aggregated, sent to the cloud over Wi‑Fi, and visualized in EventPlus.</div>
+      </article>
+
+      <article class="architecture-card smartphone-arch">
+        <div class="arch-head">
+          <div><span class="arch-number">02</span><h3>Smartphone Architecture</h3><p>For very large events where issuing cards to every attendee is not practical.</p></div>
+          <div class="recommend-tag green">Large Exhibitions / Official App Integration</div>
+        </div>
+        <div class="arch-diagram smartphone-flow">
+          <div class="arch-node booth-beacon"><img src="assets/beacon-card.png" alt="Booth-installed Beacon" /><b>Each Booth</b><span>Beacon installed</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node phone-node"><div class="phone-shell"><span>APP</span></div><b>Attendee Smartphone</b><span>App introduced / installed at reception</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node detect-node"><div class="radio-icon">)))</div><b>Detected by App</b><span>Detect nearby Beacons while the app is active</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node cloud-node"><div class="cloud-icon">☁</div><b>Cloud</b><span>Transmit and store detection data</span></div>
+          <span class="flow-arrow">→</span>
+          <div class="arch-node web-node"><img src="assets/heatmap-dashboard.png" alt="EventPlus web dashboard" /><b>EventPlus</b><span>Heatmaps and visit analytics</span></div>
+        </div>
+        <div class="arch-explain"><strong>Experience at CEATEC and other large exhibitions:</strong> For events with around 150,000 attendees, rather than issuing cards to everyone, we have used an official-app approach. Location data was captured for approximately 30% of attendees — around 40,000 to 50,000 people — primarily those who installed and actively used the app.<small>* Capture rates vary depending on event conditions, app installation rates, app usage and other factors.</small></div>
+      </article>
+
+      <div class="device-row">
+        <article class="device-mini"><img src="assets/beacon-card.png" alt="Beacon Card" /><div><span>BLE</span><h3>Beacon Card</h3><p>Used either as an attendee-issued card or a booth-installed beacon.</p></div></article>
+        <article class="device-mini"><img src="assets/cloudsense-sensor.png" alt="CloudSense sensor" /><div><span>SENSOR</span><h3>CloudSense</h3><p>Sensor used to detect beacons in booths and designated areas.</p></div></article>
+        <article class="device-mini"><img src="assets/uwb-card-clean.png" alt="UWB Card" /><div><span>UWB</span><h3>UWB Card</h3><p>For use cases requiring higher-precision location and dwell-time detection.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section realtime-section" id="usecases">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">REAL-TIME USE</p>
+        <h2>Use live event data for operations and engagement.</h2>
+      </div>
+      <div class="usecase-grid">
+        <article class="usecase-card"><img src="assets/vip-guide.png" alt="VIP support" /><div><h3>Immediate VIP & Key Guest Response</h3><p>Detect when key guests arrive or approach a designated area and share that information with sales or reception teams to enable faster response.</p></div></article>
+        <article class="usecase-card"><img src="assets/crowd-optimization.png" alt="Congestion visualization" /><div><h3>Optimize Congestion & Consultation Areas</h3><p>Monitor dwell and congestion by booth or consultation area and adjust staffing or guidance based on live data.</p></div></article>
+        <article class="usecase-card"><img src="assets/hotlead-analysis.png" alt="Hot lead analysis" /><div><h3>Interest Themes & Hot Leads</h3><p>Analyze how long visitors engage with specific themes and use that information for post-event sales follow-up and exhibitor support.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="download-band" id="download">
+    <div class="container download-grid">
+      <div><p class="section-kicker light">DOWNLOAD</p><h2>EventPlus Overview & Use Cases</h2><p>See the complete EventPlus workflow — reception, location-data capture, real-time operations, analytics and optional modules.</p></div>
+      <div class="download-action"><a class="button white" href="https://innovaturetech.com/solutions-and-services-inquiries/">Download Brochure</a><small>* The public site will link to the brochure download form.</small></div>
+    </div>
+  </section>
+
+  <section class="section analysis-section" id="analysis">
+    <div class="container">
+      <div class="split-heading">
+        <div><p class="section-kicker">ANALYSIS & REPORT</p><h2>Turn venue activity into data you can review.</h2></div>
+        <p>Review heatmaps, booth dwell time, attendee profiles, inflow/outflow and time-based trends to support post-event evaluation and future planning.</p>
+      </div>
+      <div class="analysis-grid balanced">
+        <figure><img src="assets/analysis-industry.jpg" alt="Attendee profile analysis" /><figcaption>Attendee Profiles</figcaption></figure>
+        <figure><img src="assets/analysis-flow.jpg" alt="Booth inflow and outflow analysis" /><figcaption>Booth Inflow / Outflow</figcaption></figure>
+        <figure><img src="assets/analysis-time.jpg" alt="Time-based attendance analysis" /><figcaption>Attendance by Time</figcaption></figure>
+        <figure class="analysis-heatmap"><img src="assets/heatmap-dashboard.png" alt="Heatmap analytics dashboard" /><figcaption>Venue / Booth Congestion & Heatmap</figcaption></figure>
+      </div>
+      <div class="quality-note">
+        <strong>Reporting is designed around traceable source data and verifiable aggregation rules.</strong>
+        <p>EventPlus supports analysis and report preparation while allowing teams to review the underlying data in dashboards or CSV. We place emphasis on confirming aggregation values and conditions before finalizing deliverables, while minimizing manual aggregation steps wherever possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section options-section" id="options">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">OPTIONS</p>
+        <h2>Support organizers, sales teams and exhibitors.</h2>
+      </div>
+      <div class="option-grid">
+        <article class="option-card guide guide-wide">
+          <div class="option-copy">
+            <span class="option-type">For Organizers & Sales Teams</span>
+            <h3>GuidePlus</h3>
+            <p class="option-lead">Find the attendee you need — while the event is live.</p>
+            <p>Search for attendees by name, company and other attributes, build a target list, and view their latest location on a map. GuidePlus supports VIP engagement, sales hosting and business matching.</p>
+            <ul class="check-list"><li>Search and shortlist attendees</li><li>Create target attendee lists</li><li>View latest location on the map</li><li>VIP & Key Guest Support</li><li>Support sales and hospitality teams</li></ul>
+          </div>
+          <div class="guide-screens" aria-label="GuidePlus screen examples">
+            <figure><img src="assets/guide-search.jpg" alt="GuidePlus search screen" /><figcaption>1. Search for attendees</figcaption></figure>
+            <figure><img src="assets/guide-list.jpg" alt="GuidePlus list screen" /><figcaption>2. Build a target list</figcaption></figure>
+            <figure><img src="assets/guide-map.jpg" alt="GuidePlus map screen" /><figcaption>3. View latest location</figcaption></figure>
+          </div>
+        </article>
+
+        <article class="option-card exhibitor">
+          <div class="option-copy">
+            <span class="option-type">For Exhibitors</span>
+            <h3>ExhibitorPlus</h3>
+            <p class="option-lead">Turn booth visits into sales conversations on the spot.</p>
+            <p>Manage attendee QR scans, visitor lists and sales notes from a smartphone to support exhibitor follow-up and sales activity.</p>
+            <ul class="check-list"><li>Scan attendee QR codes</li><li>Manage visitor lists</li><li>Add simple notes to attendee records</li><li>Brochure delivery integration</li></ul>
+          </div>
+          <div class="exhibitor-phones"><img src="assets/exhibitor-list.png" alt="ExhibitorPlus visitor list" /><img src="assets/exhibitor-detail.png" alt="ExhibitorPlus attendee notes" /></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section partner-section" id="partners">
+    <div class="container">
+      <div class="section-heading narrow">
+        <p class="section-kicker">FOR EVENT PARTNERS</p>
+        <h2>Expand the value of your event proposals with EventPlus.</h2>
+        <p>EventPlus can be added to your existing event plan or reception platform rather than replacing it. We can support joint proposals with technical explanation, architecture design, on-site setup, operations and analytics for each project.</p>
+      </div>
+
+      <div class="partner-benefit-grid">
+        <article class="partner-benefit">
+          <span class="partner-label">For Event Production Companies</span>
+          <h3>Extend your proposal from event production and operations to measurable outcomes.</h3>
+          <ul>
+            <li><b>Differentiate proposals:</b> Add visits, dwell time and traffic-flow data beyond simple attendance counts.</li>
+            <li><b>Create add-on value:</b> Combine organizer analytics, GuidePlus and ExhibitorPlus for exhibitors.</li>
+            <li><b>Support repeat business:</b> Use post-event data to improve the next venue layout and event plan.</li>
+            <li><b>Technical delivery by our team:</b> We support BLE/UWB, sensor design, cloud infrastructure and analytics.</li>
+          </ul>
+        </article>
+        <article class="partner-benefit">
+          <span class="partner-label">For Event Operations Companies</span>
+          <h3>Support reception and venue operations with real-time data.</h3>
+          <ul>
+            <li><b>Reception support:</b> Link attendee QR codes to Beacon IDs and support reception and entry/exit management.</li>
+            <li><b>Operational decisions:</b> Use congestion, dwell and key-guest location data to guide staffing and attendee assistance.</li>
+            <li><b>Operational design:</b> Plan distribution and collection, reception lanes, networking and sensor placement in advance.</li>
+            <li><b>Reduce manual work:</b> Store event data directly to reduce post-event manual aggregation.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="partner-flow">
+        <div><span>1</span><b>Project Discussion</b><p>Share event scale, goals and challenges</p></div>
+        <i>→</i>
+        <div><span>2</span><b>Joint Proposal</b><p>Design architecture, data capture and operations</p></div>
+        <i>→</i>
+        <div><span>3</span><b>On-Site Preparation</b><p>Validate reception, sensors and network</p></div>
+        <i>→</i>
+        <div><span>4</span><b>Live Operations</b><p>Setup, support and real-time use</p></div>
+        <i>→</i>
+        <div><span>5</span><b>Analysis</b><p>Support post-event review</p></div>
+      </div>
+
+      <div class="integration-note">
+        <strong>We can also integrate with your existing reception or event-management platform.</strong>
+        <p>You can keep your existing registration and reception platform while combining its attendee IDs with EventPlus location and behavioral data. CSV or API-based integration can be reviewed based on project requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section intelligence-section" id="intelligence">
+    <div class="container intelligence-panel">
+      <div class="intelligence-copy">
+        <div class="future-badge">Future Concept / Under Internal Review</div>
+        <p class="section-kicker">EVENT INTELLIGENCE — EVENTPLUS × AI</p>
+        <h2>Ask questions of accumulated event data in natural language.</h2>
+        <p>We are exploring an Event Intelligence concept that combines verified EventPlus data with AI to help users discover analytical perspectives and assist with report preparation.</p>
+        <p class="caution">* This is not part of the current standard offering. Scope and availability have not been finalized.</p>
+      </div>
+      <div class="ai-examples">
+        <div class="ai-chat"><b>Q.</b><span>Which manufacturing managers stayed at Booth A for more than 10 minutes?</span><p><b>Illustrative answer:</b> Identify matching attendees, counts and visit histories to review potential sales follow-up targets.</p></div>
+        <div class="ai-chat"><b>Q.</b><span>Which themes gained the most interest compared with our previous event?</span><p><b>Illustrative answer:</b> Compare dwell time, visits and traffic patterns across events and highlight themes that changed.</p></div>
+        <div class="ai-chat"><b>Q.</b><span>What should we improve operationally at the next event?</span><p><b>Illustrative answer:</b> Review peak congestion, dwell hotspots and attendee movement patterns to suggest areas for improvement.</p></div>
+      </div>
+      <div class="recurring-benefit">
+        <h3>The more frequently you run events, the more valuable accumulated event data becomes.</h3>
+        <div class="recurring-grid">
+          <div><b>Cross-Event Comparison</b><span>Compare the same KPIs across spring/fall events, locations or fiscal years.</span></div>
+          <div><b>Interest Trends Over Time</b><span>Track which themes and booths are gaining attention over time.</span></div>
+          <div><b>Repeat Attendance Patterns</b><span>Within the scope of consent and ID design, compare repeat and first-time attendees.</span></div>
+          <div><b>Standardized Reporting</b><span>Review every event using consistent metrics and streamline internal reporting.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section case-section" id="case">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">CASE STUDY</p>
+        <h2>From small demos to events with 150,000 attendees.</h2>
+        <p>EventPlus has been used in real-world venues for location and behavioral data analysis, including publicly shareable large-scale examples.</p>
+      </div>
+      <article class="case-card">
+        <div class="case-photo"><img src="assets/ceatec-photo.jpg" alt="Real-time heatmap display at CEATEC" /></div>
+        <div class="case-copy">
+          <span class="case-label">CEATEC JAPAN</span>
+          <h3>Official App Integration & Real-Time Heatmaps</h3>
+          <p>Combined an official event app with location data to provide venue heatmaps, booth search and navigation, and visit-behavior visualization.</p>
+          <div class="case-stats"><div><b>2017–2022</b><span>Official app partner initiative</span></div><div><b>150,000 attendees</b><span>Large-scale exhibition experience</span></div></div>
+        </div>
+      </article>
+      <div class="case-subgrid"><figure><img src="assets/ceatec-mode.jpg" alt="CEATEC official app mode" /><figcaption>Examples include heatmaps, booth search/navigation and automatic visit logging.</figcaption></figure><figure><img src="assets/heatmap-dashboard.png" alt="Heatmap analysis" /><figcaption>Example visualization of venue congestion and booth-visit data.</figcaption></figure></div>
+    </div>
+  </section>
+
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-heading narrow"><p class="section-kicker">FAQ</p><h2>Frequently Asked Questions</h2><p>Common questions we receive during evaluation, organized by category.</p></div>
+
+      <div class="faq-category">
+        <h3>Device Questions</h3>
+        <div class="faq-list">
+          <details><summary>Do we need to give a Beacon Card to every attendee?</summary><p>It depends on the data you want to capture and the size of the event. If attendee-level behavior is required across the full audience, issuing a card to everyone is the standard approach. It is also possible to track only VIPs or selected attendees. For very large events, we may recommend the smartphone approach instead.</p></details>
+          <details><summary>How are Beacon Cards collected after the event?</summary><p>Collection can be designed around the venue flow using staffed exit points, dedicated return boxes or other methods. Multiple collection points can be used when there are several exits.</p></details>
+          <details><summary>Are Beacon Cards sometimes taken home or lost?</summary><p>There is always some risk of loss. We reduce it through lanyard use, clear return instructions at exits, well-designed collection flow and spare inventory.</p></details>
+          <details><summary>How accurate is the location data?</summary><p>BLE is primarily used for zone-level detection — for example, identifying which booth or area an attendee stayed in. Accuracy varies with venue conditions, obstructions and sensor placement. UWB can be proposed when higher precision is required.</p></details>
+          <details><summary>What types of events are suitable for UWB?</summary><p>UWB is suited to detailed VIP/key-account location, dwell analysis at consultation tables, high-precision demos and detailed traffic analysis within limited areas.</p></details>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h3>Network Questions</h3>
+        <div class="faq-list">
+          <details><summary>What network environment is required?</summary><p>We review venue Wi‑Fi, internet connectivity and power conditions in advance and design the network together with sensor and Gateway placement. Depending on the venue, wired LAN or mobile connectivity may also be considered.</p></details>
+          <details><summary>Could congested venue Wi‑Fi cause the system to fail?</summary><p>For large events, it is important not to rely entirely on the same Wi‑Fi used by general attendees. We design and test options such as dedicated SSIDs, dedicated circuits, wired connectivity and mobile networks, and can propose redundancy based on venue conditions.</p></details>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h3>Reception System Questions</h3>
+        <div class="faq-list">
+          <details><summary>Will ID linking slow down reception and create queues?</summary><p>The workflow is designed to be simple: scan the attendee QR and device QR in sequence. We reduce queue risk by designing the right number of reception lanes, separating card-distribution steps where useful, and pre-configuring devices based on expected volume and peak times.</p></details>
+          <details><summary>Can EventPlus provide the full reception function, not just QR/device linking?</summary><p>Yes. EventPlus can provide pre-registration, QR reception, entry/exit management and attendee-to-Beacon-ID linking as a complete workflow.</p></details>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h3>Reporting & AI Questions</h3>
+        <div class="faq-list">
+          <details><summary>Can you provide post-event reports?</summary><p>Yes. We can support analysis and report preparation based on captured data such as heatmaps, booth visits, dwell time, attendee profiles and time-based trends. We emphasize a workflow in which aggregated values are checked against source data before deliverables are finalized.</p></details>
+          <details><summary>What could be possible through AI integration?</summary><p>As a future concept, we are considering AI-assisted analysis that lets users query accumulated event data in natural language, identify attendees or patterns that match certain conditions, compare events and assist with report drafting. This is not part of the current standard offering.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-download">
+    <div class="container final-download-grid">
+      <div><img src="assets/eventplus-logo-transparent.png" alt="EventPlus" /><h2>Start with the brochure for a complete overview of EventPlus.</h2><p>We propose an architecture based on your event size, required data, reception workflow and venue conditions.</p></div>
+      <div><a class="button primary large" href="#download">Download Brochure</a><a class="button secondary large" href="https://innovaturetech.com/solutions-and-services-inquiries/">Contact Us</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-company"><img src="assets/innovature-logo.jpg" alt="Innovature Technologies" /><span>EventPlus / Pinmicro Location Solutions</span></div>
+    <div class="footer-links"><a href="../../">Pinmicro Solutions</a><a href="../" lang="ja">日本語</a><a href="https://innovaturetech.com/solutions-and-services-inquiries/">Contact Us</a></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
