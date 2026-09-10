@@ -10,3 +10,16 @@ if (menuButton && nav) {
     menuButton.setAttribute('aria-expanded', 'false');
   }));
 }
+
+
+// Prevent awkward line breaks around Japanese middle dots in headings/navigation.
+(function protectJapaneseMiddleDots(){
+  const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+  const nodes=[];
+  while(walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(node=>{
+    if(node.nodeValue && node.nodeValue.includes('・')){
+      node.nodeValue=node.nodeValue.replace(/・/g,'\u2060・\u2060');
+    }
+  });
+})();

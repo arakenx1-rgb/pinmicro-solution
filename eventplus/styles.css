@@ -31,15 +31,19 @@ p,h1,h2,h3,li,summary{line-break:strict;word-break:auto-phrase;overflow-wrap:nor
 .small-label,.option-type,.partner-label,.case-label,.future-badge{display:inline-flex;align-items:center;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:800;letter-spacing:.04em;background:#e7f4ff;color:var(--blue)}
 .nowrap{white-space:nowrap}
 
-.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(14,76,126,.08)}
-.header-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.company-brand img{height:48px;width:auto;border-radius:3px}
-.global-nav{display:flex;align-items:center;gap:20px;font-size:14px;font-weight:700}
-.global-nav>a:not(.nav-download):not(.nav-contact){color:#334c63}
-.nav-download,.nav-contact{padding:10px 16px;border-radius:999px}
-.nav-download{border:1px solid var(--blue);color:var(--blue)}
-.nav-contact{background:var(--navy);color:#fff}
-.menu-button{display:none;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 12px;font-weight:700}
+.site-header{position:sticky;top:0;z-index:60;background:linear-gradient(180deg,rgba(248,251,255,.96),rgba(240,247,252,.96));backdrop-filter:blur(14px);border-bottom:1px solid rgba(14,76,126,.08);box-shadow:0 10px 30px rgba(18,60,95,.08)}
+.site-header .container{width:min(1400px,calc(100% - 32px))}
+.header-inner{height:94px;display:flex;align-items:center;justify-content:flex-start;gap:18px}
+.company-brand{flex:0 0 auto;display:flex;align-items:center}
+.company-brand img{height:52px;width:auto;border-radius:8px;box-shadow:0 8px 18px rgba(11,58,104,.12)}
+.global-nav{flex:1;min-width:0;display:flex;align-items:center;justify-content:flex-start;gap:8px;font-size:14px;font-weight:700;line-height:1.2;padding:10px 12px 10px 18px;background:linear-gradient(180deg,#f9fbff 0%,#edf6fd 100%);border:1px solid #d5e4f0;border-radius:20px;box-shadow:0 14px 30px rgba(22,69,109,.08)}
+.global-nav>a{white-space:nowrap;word-break:keep-all;line-break:strict;padding:12px 14px;border-radius:12px;transition:background .2s ease,color .2s ease,box-shadow .2s ease,transform .2s ease}
+.global-nav>a:not(.nav-download):not(.nav-contact){color:#314e67}
+.global-nav>a:not(.nav-download):not(.nav-contact):hover{background:#fff;color:var(--navy);box-shadow:0 8px 18px rgba(12,62,104,.10);transform:translateY(-1px)}
+.nav-download,.nav-contact{padding:12px 18px;border-radius:999px;white-space:nowrap}
+.nav-download{margin-left:auto;border:1px solid #b8d4ee;background:#fff;color:var(--blue);box-shadow:0 4px 12px rgba(11,99,182,.07)}
+.nav-contact{background:linear-gradient(135deg,var(--navy),#0b63b6);color:#fff;box-shadow:0 10px 20px rgba(7,63,118,.18)}
+.menu-button{display:none;border:1px solid #cfe0ee;background:#fff;border-radius:12px;padding:10px 14px;font-weight:800;color:var(--navy);box-shadow:0 10px 20px rgba(18,60,95,.08)}
 
 .hero{padding:78px 0 72px;background:linear-gradient(135deg,#f7fbff 0%,#eef8ff 48%,#fff 100%);overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:56px}
@@ -114,7 +118,12 @@ p,h1,h2,h3,li,summary{line-break:strict;word-break:auto-phrase;overflow-wrap:nor
 .site-footer{background:#071f36;color:#c8d8e5;padding:28px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.footer-company{display:flex;align-items:center;gap:18px}.footer-company img{width:160px;border-radius:2px}.footer-company span{font-size:12px}.footer-links{display:flex;gap:20px;font-size:12px}
 
 @media (max-width:1080px){
-  .global-nav{gap:12px;font-size:12px}.nav-download,.nav-contact{padding:8px 11px}
+  .site-header .container{width:min(1280px,calc(100% - 28px))}
+  .header-inner{height:88px;gap:14px}
+  .company-brand img{height:48px}
+  .global-nav{gap:6px;font-size:13px;padding:8px 10px 8px 14px}
+  .global-nav>a{padding:10px 11px}
+  .nav-download,.nav-contact{padding:11px 15px}
   .hero-grid{grid-template-columns:1fr}.hero-copy{max-width:780px}.hero-visual{max-width:800px}.chip-one{left:2%}.chip-two{right:2%}
   .feature-grid{grid-template-columns:repeat(2,1fr)}
   .arch-diagram{grid-template-columns:1fr;gap:6px}.flow-arrow{transform:rotate(90deg)}.arch-node{padding:6px}.arch-node img{height:90px}.dual-images{height:90px}
@@ -126,8 +135,13 @@ p,h1,h2,h3,li,summary{line-break:strict;word-break:auto-phrase;overflow-wrap:nor
 
 @media (max-width:820px){
   .container{width:min(100% - 32px,var(--max))}.section{padding:76px 0}
-  .menu-button{display:block}.global-nav{display:none;position:absolute;top:70px;left:16px;right:16px;padding:18px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.global-nav.open{display:flex}.global-nav a{padding:8px 4px}
-  .company-brand img{height:42px}.header-inner{height:70px}
+  .site-header .container{width:min(100% - 24px, var(--max))}
+  .menu-button{display:block;flex:0 0 auto}
+  .global-nav{display:none;position:absolute;top:82px;left:12px;right:12px;padding:14px;background:linear-gradient(180deg,#f9fbff 0%,#edf6fd 100%);border:1px solid #d5e4f0;border-radius:18px;box-shadow:0 18px 40px rgba(17,68,109,.18);flex-direction:column;align-items:stretch;gap:6px}
+  .global-nav.open{display:flex}
+  .global-nav a{padding:12px 14px;transform:none!important;box-shadow:none!important}
+  .global-nav .nav-download{margin-left:0;margin-top:4px}
+  .company-brand img{height:44px}.header-inner{height:74px;gap:12px}
   .hero{padding-top:52px}.hero h1{font-size:47px}.desktop-break{display:none}.product-logo{max-width:60%}.hero-visual{margin-top:6px}.float-chip{font-size:11px;padding:8px 10px}.chip-one{top:8%}.chip-two{top:46%}.chip-three{bottom:8%}
   .feature-grid,.flex-band,.reception-grid,.split-heading,.device-row,.partner-benefit-grid,.case-card,.case-subgrid,.download-grid,.final-download-grid{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}.step-arrow{transform:rotate(90deg);text-align:center}.step{min-height:0}
@@ -200,4 +214,20 @@ p,h1,h2,h3,li,summary{line-break:strict;word-break:auto-phrase;overflow-wrap:nor
   .guide-screens{grid-template-columns:1fr}
   .guide-screens img{height:auto;max-height:520px}
   .device-mini img{width:96px;height:96px;flex-basis:96px}
+}
+
+
+/* ===== v5 typography / Japanese line-break rules ===== */
+.section-heading h1,.section-heading h2,.split-heading h2,.reception-copy h3,.arch-head h3,.usecase-card h3,.option-card h3,.partner-card h3,.case-copy h3,.final-download-grid h2{
+  text-wrap:balance;
+  line-break:strict;
+  word-break:auto-phrase;
+  overflow-wrap:normal;
+}
+.phrase-group,.no-break{white-space:nowrap;word-break:keep-all}
+.eventplus-result-heading{max-width:820px;text-wrap:balance}
+/* Optional break points are inserted only at natural phrase boundaries. */
+.eventplus-result-heading wbr{display:inline}
+@media (max-width:620px){
+  .eventplus-result-heading{font-size:28px!important;line-height:1.38!important;letter-spacing:-.02em!important}
 }
