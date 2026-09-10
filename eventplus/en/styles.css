@@ -210,3 +210,51 @@ p,h1,h2,h3,li,summary{line-break:strict;word-break:auto-phrase;overflow-wrap:nor
 .lang-en .hero-lead, .lang-en p { line-height: 1.7; }
 .lang-en .feature-grid h3, .lang-en .device-mini h3, .lang-en .option-card h3 { letter-spacing: -0.01em; }
 @media (max-width: 760px) { .lang-en .hero-title span { white-space:normal; } }
+
+/* ===== Header navigation: keep desktop labels on one line ===== */
+.header-inner{position:relative}
+.company-brand{flex:0 0 auto}
+.global-nav{flex-wrap:nowrap}
+.global-nav > a{
+  flex:0 0 auto;
+  white-space:nowrap;
+  word-break:keep-all;
+  overflow-wrap:normal;
+  line-break:auto;
+  line-height:1.35;
+}
+.nav-download,.nav-contact{white-space:nowrap}
+
+@media (min-width:1181px){
+  .site-header .container.header-inner{
+    width:min(1460px,calc(100% - 28px));
+    max-width:none;
+  }
+  .header-inner{gap:16px}
+  .company-brand img{height:44px}
+  .global-nav{gap:12px;font-size:13px}
+  .nav-download,.nav-contact{padding:9px 13px}
+}
+
+/* Switch to the menu before labels need to wrap. */
+@media (max-width:1180px){
+  .menu-button{display:block}
+  .global-nav{
+    display:none;
+    position:absolute;
+    top:calc(100% + 8px);
+    left:0;
+    right:0;
+    padding:18px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:16px;
+    box-shadow:var(--shadow);
+    flex-direction:column;
+    align-items:stretch;
+    gap:6px;
+  }
+  .global-nav.open{display:flex}
+  .global-nav > a{padding:9px 6px}
+  .nav-download,.nav-contact{text-align:center;justify-content:center}
+}
