@@ -84,14 +84,19 @@
             実証実験から本格導入まで支援
           </span>
         </div>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn--primary btn--lg">
-            専用フォームから相談する
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="#contact" class="btn btn--secondary btn--lg">
-            実証実験について問い合わせる
-          </a>
+<div class="hero-actions">
+  <a href="#downloads" class="btn btn--primary btn--lg hero-download-btn">
+    資料を無料ダウンロード
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 3v12"></path>
+      <polyline points="7 10 12 15 17 10"></polyline>
+      <path d="M5 21h14"></path>
+    </svg>
+  </a>
+
+<a href="#contact" class="btn btn--secondary btn--lg">
+  導入について相談する
+</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -134,55 +139,74 @@
         <h2 class="section-title">製造・物流・倉庫の現場で、<br>こんなお困りごとはありませんか？</h2>
       </div>
       <div class="challenge-grid">
-        <!-- Card 1 -->
-        <div class="challenge-card fade-in fade-in-delay-1">
-          <div class="challenge-icon">
-            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          </div>
-          <h3>モノを探す時間が多い</h3>
-          <p>工具、治具、測定器、金型、台車、カゴ車、通い箱、専用ラックなどの所在確認に時間がかかっている。</p>
-        </div>
-        <!-- Card 2 -->
-        <div class="challenge-card fade-in fade-in-delay-2">
-          <div class="challenge-icon">
-            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>人の動きが見えない</h3>
-          <p>作業者、応援者、多能工、保全担当者が、どの工程やエリアにどれだけ滞在しているか把握できない。</p>
-        </div>
-        <!-- Card 3 -->
-        <div class="challenge-card fade-in fade-in-delay-3">
-          <div class="challenge-icon">
-            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </div>
-          <h3>物流動線が最適化できない</h3>
-          <p>ピッキング、搬送、入出庫、補充作業の動きが見えず、ムダな移動や待機が発生している。</p>
-        </div>
-        <!-- Card 4 -->
-        <div class="challenge-card fade-in fade-in-delay-1">
-          <div class="challenge-icon">
-            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-          </div>
-          <h3>車両・搬送機器の動きが把握しづらい</h3>
-          <p>フォークリフト、搬送台車、AGV、専用ラックなどの動線や稼働状況を定量的に把握できない。</p>
-        </div>
-        <!-- Card 5 -->
-        <div class="challenge-card fade-in fade-in-delay-2">
-          <div class="challenge-icon">
-            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-          </div>
-          <h3>現場改善の根拠データが不足している</h3>
-          <p>改善活動を行っても、効果を定量的に確認できず、次の施策につなげにくい。</p>
-        </div>
-        <!-- Card 6 -->
-        <div class="challenge-card fade-in fade-in-delay-3">
-          <div class="challenge-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          </div>
-          <h3>実証実験で止まってしまう</h3>
-          <p>位置情報を取得できても、データ活用の設計が不十分で、本格導入やROI評価につながらない。</p>
-        </div>
-      </div>
+
+  <div class="challenge-card challenge-card--photo fade-in fade-in-delay-1">
+    <img class="challenge-image"
+         src="assets/pinmicro/challenge-search.webp"
+         alt="工場内で工具や部品を探す作業者"
+         loading="lazy">
+    <div class="challenge-content">
+      <h3>モノを探す時間が多い</h3>
+      <p>工具、治具、測定器、金型、台車、カゴ車、通い箱、専用ラックなどの所在確認に時間がかかっている。</p>
+    </div>
+  </div>
+
+  <div class="challenge-card challenge-card--photo fade-in fade-in-delay-2">
+    <img class="challenge-image"
+         src="assets/pinmicro/challenge-workers.webp"
+         alt="工場内を移動する複数の作業者"
+         loading="lazy">
+    <div class="challenge-content">
+      <h3>人の動きが見えない</h3>
+      <p>作業者、応援者、多能工、保全担当者が、どの工程やエリアにどれだけ滞在しているか把握できない。</p>
+    </div>
+  </div>
+
+  <div class="challenge-card challenge-card--photo fade-in fade-in-delay-3">
+    <img class="challenge-image"
+         src="assets/pinmicro/challenge-logistics.webp"
+         alt="物流倉庫内のピッキングと搬送"
+         loading="lazy">
+    <div class="challenge-content">
+      <h3>物流動線が最適化できない</h3>
+      <p>ピッキング、搬送、入出庫、補充作業の動きが見えず、ムダな移動や待機が発生している。</p>
+    </div>
+  </div>
+
+  <div class="challenge-card challenge-card--photo fade-in fade-in-delay-1">
+    <img class="challenge-image"
+         src="assets/pinmicro/challenge-forklift.webp"
+         alt="物流倉庫を走行するフォークリフト"
+         loading="lazy">
+    <div class="challenge-content">
+      <h3>車両・搬送機器の動きが把握しづらい</h3>
+      <p>フォークリフト、搬送台車、AGV、専用ラックなどの動線や稼働状況を定量的に把握できない。</p>
+    </div>
+  </div>
+
+  <div class="challenge-card challenge-card--photo fade-in fade-in-delay-2">
+    <img class="challenge-image"
+         src="assets/pinmicro/challenge-analysis.webp"
+         alt="工場内でデータを確認する担当者"
+         loading="lazy">
+    <div class="challenge-content">
+      <h3>現場改善の根拠データが不足している</h3>
+      <p>改善活動を行っても、効果を定量的に確認できず、次の施策につなげにくい。</p>
+    </div>
+  </div>
+
+  <div class="challenge-card challenge-card--photo fade-in fade-in-delay-3">
+    <img class="challenge-image"
+         src="assets/pinmicro/challenge-poc.webp"
+         alt="工場で位置情報センサーを検証する技術者"
+         loading="lazy">
+    <div class="challenge-content">
+      <h3>実証実験で止まってしまう</h3>
+      <p>位置情報を取得できても、データ活用の設計が不十分で、本格導入やROI評価につながらない。</p>
+    </div>
+  </div>
+
+</div>
     </div>
   </section>
 
@@ -253,7 +277,30 @@
       </div>
     </div>
   </section>
+<!-- ===== 中段 資料ダウンロードCTA ===== -->
+<section class="mid-download-cta">
+  <div class="container">
+    <div class="mid-download-inner fade-in">
+      <div class="mid-download-copy">
+        <span class="mid-download-label">FREE DOWNLOAD</span>
+        <h2>位置情報DXを検討中の方へ</h2>
+        <p>
+          UWB・BLEの違いや導入時のチェックポイントなど、<br>
+          現場で役立つ資料を無料でダウンロードいただけます。
+        </p>
+      </div>
 
+      <a href="#downloads" class="btn btn--primary btn--lg hero-download-btn">
+        資料を無料ダウンロード
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 3v12"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <path d="M5 21h14"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
   <!-- ===== 5. システム構成 ===== -->
   <section class="section section--alt" id="system">
     <div class="container">
@@ -605,7 +652,40 @@
       </div>
     </div>
   </section>
+<!-- ===== EventPlus Service ===== -->
+<section class="eventplus-service">
+  <div class="container">
+    <a href="eventplus/" class="eventplus-service-inner fade-in">
 
+      <div class="eventplus-service-image">
+        <img
+          src="assets/pinmicro/eventplus-banner.webp"
+          alt="イベント・展示会向け来場者行動分析 EventPlus"
+          loading="lazy">
+      </div>
+
+      <div class="eventplus-service-copy">
+        <span class="eventplus-service-label">PINMICRO SOLUTION</span>
+
+        <h2>
+          イベント・展示会向け<br>
+          来場者行動分析「EventPlus」
+        </h2>
+
+        <p>
+          来場者の位置、ブース訪問、滞在時間、回遊、混雑を可視化。
+          リアルイベントの運営から営業・マーケティングまで支援します。
+        </p>
+
+        <span class="eventplus-service-link">
+          EventPlusを見る →
+        </span>
+      </div>
+
+    </a>
+  </div>
+</section>
+  
   <!-- ===== 12. 資料ダウンロード ===== -->
   <section class="section section--dark" id="downloads">
     <div class="container">
@@ -972,15 +1052,20 @@
       <div class="final-cta-content fade-in">
         <h2>まずは、現場の"見える化したい対象"を<br>お聞かせください。</h2>
         <p>人の動き、モノの所在、車両の稼働、工程別の滞在時間など、現場によって可視化すべき対象は異なります。<br><br>Pinmicroソリューションは、現場課題の整理から測位方式の選定、実証実験設計、ダッシュボード化、AI分析まで一貫して支援します。</p>
-        <div class="final-cta-actions">
-          <a href="#contact" class="btn btn--white btn--lg">
-            専用フォームから相談する
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="#contact" class="btn btn--secondary btn--lg">
-            実証実験について問い合わせる
-          </a>
-        </div>
+<div class="hero-actions">
+  <a href="#downloads" class="btn btn--primary btn--lg hero-download-btn">
+    資料を無料ダウンロード
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 3v12"></path>
+      <polyline points="7 10 12 15 17 10"></polyline>
+      <path d="M5 21h14"></path>
+    </svg>
+  </a>
+
+  <a href="#contact" class="btn btn--secondary btn--lg">
+    導入について相談する
+  </a>
+</div>
       </div>
     </div>
   </section>
