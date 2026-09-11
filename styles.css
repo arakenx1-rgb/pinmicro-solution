@@ -2063,3 +2063,68 @@ a:hover {
     break-inside: avoid;
   }
 }
+/* =========================================================
+   Pinmicro update 2026-09
+   Hero download CTA / Challenge photo cards
+========================================================= */
+
+/* Hero download button */
+.hero-download-btn {
+  background: #f28c28 !important;
+  border-color: #f28c28 !important;
+  color: #fff !important;
+  box-shadow: 0 8px 24px rgba(242, 140, 40, 0.28);
+}
+
+.hero-download-btn:hover {
+  background: #df7b18 !important;
+  border-color: #df7b18 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(242, 140, 40, 0.35);
+}
+
+
+/* Challenge photo cards */
+.challenge-card--photo {
+  padding: 0 !important;
+  overflow: hidden;
+  background: #fff;
+}
+
+.challenge-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.challenge-content {
+  padding: 22px 22px 26px;
+}
+
+.challenge-card--photo h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.challenge-card--photo p {
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+.challenge-card--photo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(20, 50, 70, 0.14);
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .challenge-content {
+    padding: 20px;
+  }
+
+  .challenge-image {
+    aspect-ratio: 16 / 10;
+  }
+}
