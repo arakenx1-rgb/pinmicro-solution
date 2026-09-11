@@ -2128,3 +2128,147 @@ a:hover {
     aspect-ratio: 16 / 10;
   }
 }
+/* =========================================================
+   Middle Download CTA
+========================================================= */
+
+.mid-download-cta {
+  padding: 52px 0;
+  background: linear-gradient(135deg, #075d9b 0%, #1184c7 100%);
+}
+
+.mid-download-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.mid-download-copy {
+  color: #fff;
+}
+
+.mid-download-label {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .15em;
+  color: #9de5ff;
+}
+
+.mid-download-copy h2 {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 28px;
+}
+
+.mid-download-copy p {
+  margin: 0;
+  color: rgba(255,255,255,.85);
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   EventPlus Service Banner
+========================================================= */
+
+.eventplus-service {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.eventplus-service-inner {
+  display: grid;
+  grid-template-columns: 48% 52%;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #073f70;
+  text-decoration: none;
+  box-shadow: 0 18px 45px rgba(10,22,40,.14);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.eventplus-service-inner:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 55px rgba(10,22,40,.20);
+}
+
+.eventplus-service-image {
+  min-height: 330px;
+}
+
+.eventplus-service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eventplus-service-copy {
+  padding: 46px 48px;
+  color: #fff;
+}
+
+.eventplus-service-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #70c8ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .15em;
+}
+
+.eventplus-service-copy h2 {
+  margin: 0 0 18px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.45;
+}
+
+.eventplus-service-copy p {
+  margin: 0;
+  color: rgba(255,255,255,.85);
+  line-height: 1.85;
+}
+
+.eventplus-service-link {
+  display: inline-block;
+  margin-top: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .mid-download-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mid-download-inner .btn {
+    width: 100%;
+  }
+
+  .eventplus-service {
+    padding: 60px 0;
+  }
+
+  .eventplus-service-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .eventplus-service-image {
+    min-height: 220px;
+  }
+
+  .eventplus-service-copy {
+    padding: 30px 25px;
+  }
+
+  .eventplus-service-copy h2 {
+    font-size: 24px;
+  }
+}
