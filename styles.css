@@ -2272,3 +2272,110 @@ a:hover {
     font-size: 24px;
   }
 }
+/* ===== Download Modal ===== */
+.dl-modal-overlay{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background:rgba(0,0,0,.7);
+  backdrop-filter:blur(6px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  visibility:hidden;
+  transition:.3s ease;
+  padding:20px;
+}
+
+.dl-modal-overlay.active{
+  opacity:1;
+  visibility:visible;
+}
+
+.dl-modal{
+  width:100%;
+  max-width:480px;
+  position:relative;
+  padding:40px;
+  border-radius:22px;
+  background:var(--navy);
+  color:#fff;
+  box-shadow:0 25px 60px rgba(0,0,0,.45);
+  transform:translateY(20px) scale(.97);
+  transition:.3s ease;
+}
+
+.dl-modal-overlay.active .dl-modal{
+  transform:translateY(0) scale(1);
+}
+
+.dl-modal-close{
+  position:absolute;
+  top:14px;
+  right:18px;
+  border:0;
+  background:none;
+  color:rgba(255,255,255,.65);
+  font-size:30px;
+  cursor:pointer;
+}
+
+.dl-modal-header h3{
+  margin:0 0 8px;
+  font-size:26px;
+}
+
+.dl-modal-doc{
+  margin:0 0 26px;
+  padding:10px 14px;
+  border-left:3px solid var(--cyan);
+  border-radius:8px;
+  background:rgba(49,167,222,.12);
+  color:#d9f3ff;
+}
+
+.dl-modal-field{
+  margin-bottom:17px;
+}
+
+.dl-modal-field label{
+  display:block;
+  margin-bottom:6px;
+  font-size:14px;
+  font-weight:700;
+}
+
+.dl-modal-field label span{
+  color:#8edcff;
+}
+
+.dl-modal-field input{
+  width:100%;
+  padding:12px 14px;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:10px;
+  background:#fff;
+  color:var(--ink);
+  font-size:15px;
+}
+
+.dl-consent{
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+  margin:18px 0;
+  font-size:13px;
+}
+
+.dl-submit{
+  width:100%;
+  border:0;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+  .dl-modal{
+    padding:30px 20px;
+  }
+}
