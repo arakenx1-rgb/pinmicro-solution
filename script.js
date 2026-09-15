@@ -239,10 +239,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (dlModal) {
     // Open modal on download button click
-    document.querySelectorAll('.download-btn[data-pdf]').forEach(btn => {
+    document.querySelectorAll('.download-btn[data-pdf], a[href="#download"]').forEach(btn => {
       btn.addEventListener('click', () => {
-        const pdfPath = btn.getAttribute('data-pdf');
-        const pdfTitle = btn.getAttribute('data-title');
+const pdfPath = btn.getAttribute('data-pdf') || 'assets/eventplus_Spatial_DX.pdf';
+const pdfTitle = btn.getAttribute('data-title') || 'EventPlus紹介資料';
 
         // If user already submitted in this session, download directly
         const savedInfo = sessionStorage.getItem('dl_user_info');
