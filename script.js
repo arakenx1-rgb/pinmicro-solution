@@ -338,3 +338,90 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.removeChild(a);
   }
 });
+// ===== Download Modal (Gated Content) =====
+const dlModal = document.getElementById('dl-modal');
+const dlModalClose = document.getElementById('dl-modal-close');
+const dlModalForm = document.getElementById('dl-modal-form');
+const dlModalDocName = document.getElementById('dl-modal-doc-name');
+const dlTargetPdf = document.getElementById('dl-target-pdf');
+
+if (dlModal) {
+  document.querySelectorAll('.download-btn[data-pdf]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const pdfPath = btn.getAttribute('data-pdf');
+      const pdfTitle = btn.getAttribute('data-title') || 'EventPlus紹介資料';
+
+      const savedInfo = sessionStorage.getItem('dl_user_info');
+
+      if (savedInfo) {
+        triggerDownload(pdfPath);
+        return;
+      }
+
+      dlTargetPdf.value = pdfPath;
+      dlModalDocName.textContent = pdfTitle;
+      dlModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeModal() {
+    dlModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  dlModalClose.addEventListener('click', closeModal);
+
+  dlModal.addEventListener('click', (e) => {
+    if (e.target === dlModal) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && dlModal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  dlModalForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const requiredFields = dlModalForm.querySelectorAll('[required]');
+    let isValid = true;
+
+    requiredFields.forEach(field => {
+      if (field.type === 'checkbox') {
+        if (!field.checked) isValid = false;
+      } else if (!field.value.trim()) {
+        isValid = false;
+      }
+    });
+
+    if (!isValid) {
+      alert('必須項目をすべて入力し、個人情報の取扱いに同意してください。');
+      return;
+    }
+
+    sessionStorage.setItem('dl_user_info', JSON.stringify({
+      company: document.getElementById('dl-company').value,
+      name: document.getElementById('dl-name').value,
+      email: document.getElementById('dl-email').value,
+      phone: document.getElementById('dl-phone').value,
+      timestamp: new Date().toISOString()
+    }));
+
+    const pdfPath = dlTargetPdf.value;
+    triggerDownload(pdfPath);
+    closeModal();
+  });
+
+  function triggerDownload(pdfPath) {
+    const a = document.createElement('a');
+    a.href = pdfPath;
+    a.download = '';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+}
