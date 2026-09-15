@@ -346,7 +346,7 @@ const dlModalDocName = document.getElementById('dl-modal-doc-name');
 const dlTargetPdf = document.getElementById('dl-target-pdf');
 
 if (dlModal) {
-  document.querySelectorAll('.download-btn[data-pdf]').forEach(btn => {
+  document.querySelectorAll('.download-btn[data-pdf], a[href="#download"]').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
 
